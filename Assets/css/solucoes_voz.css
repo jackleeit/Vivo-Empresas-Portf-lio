@@ -1,0 +1,11 @@
+/*
+    Document   : solucoes_voz
+    Created on : Aug 29, 2012, 5:53:44 PM
+    Author     : leej
+    Description:
+        CSS para seção "Soluções de Voz"
+*/
+
+#mainMenu #solucoesVozMenu{
+    visibility: visible;
+}

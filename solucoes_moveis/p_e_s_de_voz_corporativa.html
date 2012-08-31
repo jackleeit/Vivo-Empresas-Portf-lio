@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html xmlns:og="http://ogp.me/ns#">
+    <head>
+        <!-- METAS COMUNS -->
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-language" content="pt-br" />
+        <meta name="Language" content="Portuguese">
+
+        <meta name="Author" content="Wunderman">
+        <meta name="Distribution" content="Global">
+        <meta name="Robots" content="index,follow">
+
+        <!-- METAS DO PROJETO -->
+        <meta name="Description" content="" />
+        <meta name="Keywords" content="" />
+        <meta name="Copyright" content="">
+        <meta name="Expires" content="">
+
+        <title>Vivo Empresas</title>
+
+        <!-- METAS DO FACEBOOK -->
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content=""/>
+
+	<link rel="apple-touch-icon" href="../Assets/img/icon72.png" /> <!-- Iphone / Ipad 72x72 -->
+	<link rel="apple-touch-startup-image" href="../Assets/img/splash.png" /><!-- Iphone 320x460 / Ipad 1004x768 -->
+	<meta name="viewport" content="user-scalable=no, width=device-width" /> <!-- Prevent Scaling -->
+	<meta name="apple-mobile-web-app-capable" content="yes" /><!-- Eliminate url and button bars if added to home screen -->
+
+	<script src="phonegap.js"></script>
+
+        <!-- FAVICON e CSS -->
+        <link rel="shortcut icon" type="image/x-icon" href="../Assets/img/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="../Assets/css/layoutMobile.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="../Assets/css/solucoes_moveis.css" media="all" />
+    </head>
+    <body class="liquidy">
+        <div id="base">
+            <header id="header">
+                <nav>
+                    <ul id="mainMenu">
+                        <li id="navHomeItem">
+                            <a href="../index.html" title="Vivo Empresas">Vivo Empresas</a>
+                        </li>
+                        <li>
+                            <a href="../a_empresa.html" title="A Empresa" class="arrowDown">A Empresa</a>
+                        </li>
+                        <li>
+                            <a href="index.html" title="Soluções Móveis" class="arrowDown ativo">Soluções Móveis</a>
+                            <ul id="solucoesMoveisMenu" class="subMenu">
+                                <li id="psVozCorporativa">
+                                    <a href="p_e_s_de_voz_corporativa.html" title="P&amp;S de Voz Corporativa" class="ativo">P&amp;S de Voz Corporativa</a>
+                                </li>
+                                <li id="servicosGestao">
+                                    <a href="servicos_de_gestao.html" title="Serviços de Gestão">Serviços<br/>de Gestão</a>
+                                </li>
+                                <li id="vivoDireto">
+                                    <a href="vivo_direto.html" title="Vivo Direto">Vivo<br/>Direto</a>
+                                </li>
+                                <li id="mensageria">
+                                    <a href="mensageria.html" title="Mensageria">Mensageria</a>
+                                </li>
+                                <li id="vivoInternet">
+                                    <a href="vivo_internet.html" title="Vivo Internet">Vivo<br/>Internet</a>
+                                </li>
+                                <li id="solucoesBlackBerry">
+                                    <a href="solucoes_blackberry.html" title="Soluções BlackBerry">Soluções<br/>BlackBerry</a>
+                                </li>
+                                <li id="m2m">
+                                    <a href="m2m.html" title="M2M">M2M</a>
+                                </li>
+                                <li id="telecomManagement">
+                                    <a href="telecom_management.html" title="Telecom Management">Telecom<br/>Management</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../solucoes_de_ti/index.html" title="Soluções de TI" class="arrowDown">Soluções de TI</a>
+                            <ul id="solucoesTIMenu" class="subMenu">
+                                <li id="infraTI">
+                                    <a href="../solucoes_de_ti/infra_de_ti.html" title="Infra de TI">Infra de TI</a>
+                                </li>
+                                <li id="segurancaInformacao">
+                                    <a href="../solucoes_de_ti/seguranca_da_informacao.html" title="Segurança da Informação">Segurança<br/>da Informação</a>
+                                </li>
+                                <li id="produtividadeUsuario">
+                                    <a href="../solucoes_de_ti/produtividade_ao_usuario.html" title="Produtividade ao Usuário">Produtividade ao Usuário</a>
+                                </li>
+                                <li id="colaboracao">
+                                    <a href="../solucoes_de_ti/colaboracao.html" title="Colaboração">Colaboração</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../solucoes_de_dados/index.html" title="Soluções de Dados" class="arrowDown">Soluções de Dados</a>
+                            <ul id="solucoesDadosMenu" class="subMenu">
+                                <li id="ipInternet">
+                                    <a href="../solucoes_de_dados/ip_internet.html" title="IP Internet">IP Internet</a>
+                                </li>
+                                <li id="vpn">
+                                    <a href="../solucoes_de_dados/vpn.html" title="VPN">VPN</a>
+                                </li>
+                                <li id="smart">
+                                    <a href="../solucoes_de_dados/smart.html" title="Smart">Smart</a>
+                                </li>
+                                <li id="metrolan">
+                                    <a href="../solucoes_de_dados/metrolan.html" title="Metrolan">Metrolan</a>
+                                </li>
+                                <li id="servicosInternacionais">
+                                    <a href="../solucoes_de_dados/servicos_internacionais.html" title="Serviços Internacionais">Serviços Internacionais</a>
+                                </li>
+                                <li id="cdn">
+                                    <a href="../solucoes_de_dados/cdn.html" title="CDN">CDN</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="lastItem">
+                            <a href="../solucoes_de_voz/index.html" title="Soluções de Voz" class="arrowDown">Soluções de Voz</a>
+                            <ul id="solucoesVozMenu" class="subMenu">
+                                <li id="vozTradicional">
+                                    <a href="../solucoes_de_voz/voz_tradicional.html" title="Voz Tradicional">Voz Tradicional</a>
+                                </li>
+                                <li id="vozAvancada">
+                                    <a href="../solucoes_de_voz/voz_avancada.html" title="Voz Avançada">Voz Avançada</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <hr />
+
+            <div id="content">
+                <div id="main">
+                    <section id="solucoesMoveis" class="wrapper">
+                        <article>
+
+                            <h2>P&amp;S de Voz Corporativa</h2>
+
+                            <div id="accordion">
+
+                                <h3><a title="Plano Flexível e Pacotes Associados" href="#">Plano Flexível e Pacotes Associados</a></h3>
+                                <div class="accordionContent">
+                                    <p>
+                                        O plano Vivo Empresas Flex é totalmente modular,
+                                        ou seja: pode ser montado de várias maneiras, conforme
+                                        as necessidades da empresa e o perfil do seu negócio.
+                                        Além disso, também oferece flexibilidade na negociação
+                                        de todas as tarifas: assinaturas, VC1, VC2, VC3 e mensalidades de pacotes.
+                                    </p>
+                                    <p>
+                                        Como este plano não possui uma franquia de minutos associada,
+                                        o contrato é feito por pacotes de minutos que podem ser individuais
+                                        ou compartilhados. Os Pacotes Individuais são associados a uma linha
+                                        única e os minutos serão consumidos apenas por esta linha. Já os Pacotes
+                                        Compartilhados são associados a uma conta e os minutos serão consumidos
+                                        por todas as linhas incluídas nesta conta.
+                                    </p>
+
+                                    <h4>Franquias dos pacotes</h4>
+                                    <h5>Pacotes Individuais</h5>
+                                    <ul>
+                                        <li>Pacote flexível 10 minutos</li>
+                                        <li>Pacote flexível 50 minutos*</li>
+                                        <li>Pacote flexível 75 minutos*</li>
+                                        <li>Pacote flexível 100 minutos*</li>
+                                        <li>Pacote flexível 200 minutos*</li>
+                                        <li>Pacote flexível 500 minutos*</li>
+                                        <li>Pacote flexível 1.000 minutos*</li>
+                                    </ul>
+
+                                    <h5>Pacotes Compartilhados</h5>
+                                    <ul>
+                                        <li>Pacote flexível 50 minutos*</li>
+                                        <li>Pacote flexível 100 minutos*</li>
+                                        <li>Pacote flexível 200 minutos*</li>
+                                        <li>Pacote flexível 500 minutos</li>
+                                        <li>Pacote flexível 1.000 minutos</li>
+                                        <li>Pacote flexível 5.000 minutos</li>
+                                        <li>Pacote flexível 10.000 minutos*</li>
+                                        <li>Pacote flexível 50.000 minutos</li>
+                                        <li>Pacote flexível 100.000 minutos*</li>
+                                        <li>Pacote flexível 500.000 minutos*</li>
+                                        <li>Pacote flexível 1.000.000 minutos*</li>
+                                    </ul>
+
+                                    <p>*estes pacotes não estão disponíveis para a regional NE.</p>
+
+                                    <h4>Características</h4>
+                                    <ul>
+                                        <li>Ordem de Consumo: Pacotes Individuais e Pacotes Compartilhados.</li>
+                                        <li>Contratação mínima de 100 minutos por linha.</li>
+                                        <li>
+                                            Os pacotes de minutos são válidos para ligações locais (VC1) e
+                                            em Roaming Nacional (VC1R). As ligações podem ser para outro Vivo,
+                                            para fixo e/ou para outras operadoras.
+                                        </li>
+                                        <li>O valor dos minutos excedentes será o mesmo valor do minuto contratado no pacote.</li>
+                                        <li>Planos compatíveis com o serviço Vivo Gestão.</li>
+                                        <li>
+                                            Os planos montados vêm com os seguintes serviços gratuitos já
+                                            configurados: Caixa Postal, Chamada em Espera, Conferência,
+                                            Identificador e Desvio de Chamadas.
+                                        </li>
+                                        <li>
+                                            Os planos oferecem possibilidade de negociação das tarifas de
+                                            VC2, VC3 e de Roaming Nacional (AD e DSL).
+                                        </li>
+                                    </ul>
+
+                                    <h4>Benefícios</h4>
+                                    <ul>
+                                        <li>
+                                            Flexibilidade: facilidade de negociação para conseguir
+                                            as melhores tarifas possíveis.
+                                        </li>
+                                        <li>
+                                            Rapidez: configuração dos valores no momento de ativação
+                                            da linha, sem necessidade de desenvolvimento sistêmico.
+                                        </li>
+                                        <li>
+                                            Controle: possibilidade de gestão do consumo e dos gastos
+                                            através do serviço Gestão.
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                                <h3><a title="Pacotes para Intrarede" href="#">Pacotes para Intrarede</a></h3>
+                                <div class="accordionContent">
+                                    <p>
+                                        Pacote de 2.000 minutos em ligações locais para qualquer celular Vivo.
+                                    </p>
+
+                                    <h4>Características</h4>
+                                    <ul>
+                                        <li>O valor da mensalidade dos pacotes é negociável.</li>
+                                        <li>Pacotes individuais devem ser ativados por linha.</li>
+                                        <li>
+                                            O valor do minuto excedente será tarifado conforme
+                                            os valores do minuto no plano.
+                                        </li>
+                                        <li>Pacote compatível com o serviço Vivo Gestão.</li>
+                                    </ul>
+
+                                    <h4>Benefícios</h4>
+                                    <ul>
+                                        <li>É o pacote ideal para complementar as necessidades da empresa.</li>
+                                        <li>
+                                            Redução de custos: o consumo do pacote acontece antes da franquia
+                                            de pacotes contratados no plano.
+                                        </li>
+                                        <li>
+                                            Permite comunicação com outros celulares Vivo da mesma
+                                            localidade que a linha do cliente.
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                                <h3><a title="Serviços Intragrupo" href="#">Serviços Intragrupo</a></h3>
+                                <div class="accordionContent">
+                                    <p>
+                                        Os Serviços Intragrupo permitem ligações entre as linhas do grupo,
+                                        através de identificação do CNPJ da empresa. Para ligações VC2 e VC3,
+                                        deve-se utilizar o CSP 15.
+                                    </p>
+                                    <p>
+                                        Existem 3 franquias disponíveis para este serviço: Intragrupo Local
+                                        (2.000 minutos VC1 on net), Intragrupo Regional (2.500 minutos VC1
+                                        on net + bônus promocional de 500 minutos VC2 on net) e Intragrupo Nacional
+                                        (2.500 minutos VC1 on net + bônus promocional de 500 minutos VC2 on net + bônus
+                                        promocional de 500 minutos VC3 on net).
+                                    </p>
+
+                                    <h4>Características</h4>
+                                    <ul>
+                                        <li>
+                                            Os serviços Intragrupo validam o CNPJ raiz, ou seja,
+                                            os 8 primeiros dígitos do CNPJ  da linha de origem e destino.
+                                        </li>
+                                        <li>
+                                            Os pacotes são individuais, não há compartilhamento com outras
+                                            linhas e devem ser habilitados em cada linha.
+                                        </li>
+                                        <li>
+                                            Os minutos dos serviços Intragrupo serão utilizados antes da
+                                            franquia/pacote de minutos contratado. Chamadas VC1, VC2 e VC3
+                                            a cobrar não são debitadas nos pacotes.
+                                        </li>
+                                    </ul>
+
+                                    <h4>Benefícios</h4>
+                                    <ul>
+                                        <li>Facilita a comunicação entre os funcionários da empresa.</li>
+                                        <li>
+                                            Gera mais economia, porque as chamadas entre funcionários são consumidas
+                                            antes da utilização do pacote.
+                                        </li>
+                                        <li>
+                                            É prático, porque os funcionários são automaticamente reconhecidos
+                                            por meio do sistema. Não é preciso fazer qualquer tipo de cadastramento.
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                                <h3><a title="Terminais de Voz e Terminais de Dados" href="#">Terminais de Voz e Terminais de Dados</a></h3>
+                                <div class="accordionContent">
+                                    <p>
+                                        Terminais de Voz são aparelhos dedicados unicamente à conversação.
+                                        Devido ao preço baixo, possuem ótimo custo x benefício.
+                                        Os Terminais de Dados, por sua vez, são aparelhos mais sofisticados que,
+                                        além de suporte para conversação, possuem acesso à internet e um design
+                                        diferenciado para melhorar a experiência dos usuários. Além destes aparelhos,
+                                        existem ainda o modem, os roteadores e o FWT.
+                                    </p>
+
+                                    <h4>Características</h4>
+                                    <p>
+                                        A classificação dos aparelhos é feita de acordo com a capacidade de transmissão:
+                                        aparelhos para transmissão de voz e aparelhos para transmissão de dados.
+                                    </p>
+
+                                    <h4>Benefícios</h4>
+                                    <p>
+                                        Trabalhamos com os mais sofisticados aparelhos para atender às necessidades
+                                        dos nossos clientes e para oferecer mais eficiência e agilidade de negócios
+                                        em todos os lugares.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </article>
+                    </section>
+                </div>
+            </div>
+
+            <hr />
+
+            <footer id="footer" class="bottom">
+                <section class="wrapper">
+                    <article class="contentFooter">
+                        <p>&copy; 2012 Vivo . Todos os direitos reservados</p>
+                    </article>
+                </section>
+            </footer>
+        </div>
+
+        <!-- Chamada do Jquery -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='../Assets/js/addons/jquery.js' type='text/javascript'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <script type="text/javascript" src="../Assets/js/addons/iscroll-min.js"></script>
+
+        <script type="text/javascript" src="../Assets/js/accordion.js"></script>
+
+        <!-- Controle da Página Atual -->
+        <script type="text/javascript" charset="utf-8" src="../Assets/js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,87 @@
+/*
+ * Importar estilos de addons e defaults
+*/
+
+@import url("_base/defaults.css");
+
+/*
+        fonte embedada
+*/
+@font-face {
+    font-family: 'offs_b-webfont';
+    src: url('../fonts/offs_b-webfont.eot');
+    src:    url('../fonts/offs_b-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/offs_b-webfont.woff') format('woff'),
+        url('../fonts/offs_b-webfont.ttf') format('truetype'),
+        url('../fonts/offs_b-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'vivo-bold-webfont';
+    src: url('../fonts/vivo-bold-webfont.eot');
+    src:    url('../fonts/vivo-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/vivo-bold-webfont.woff') format('woff'),
+        url('../fonts/vivo-bold-webfont.ttf') format('truetype'),
+        url('../fonts/vivo-bold-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+ * Define o aspecto principal, como cores e fundos do site.
+*/
+
+#base{
+    background: url(../img/bg/bg-home.jpg) no-repeat center top;
+    font-family: offs_b-webfont;
+}
+
+@media screen and (max-width: 990px) {
+    #base{
+        background-color: #ff0000;
+    }
+}
+
+#header{
+
+}
+
+#header .wrapper{
+    width: 1024px;
+}
+
+#content{
+    margin-bottom:18px;
+}
+
+#content .wrapper{
+    width: 1024px;
+}
+
+#footer{
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EDEDED), to(#DEDEDE), color-stop(.5,#e3e3e3),color-stop(.5,#DEDEDE));
+    background: url(../img/bg/bg-footer.gif) repeat-x left top;
+    height: 30px;
+}
+
+#footer .wrapper{
+    width: 1024px;
+}
+
+#footer .contentFooter{
+    color: #0f6b99;
+    font-family: vivo-bold-webfont;
+    font-size: 10px;
+}
+
+.contentFooter p{
+    margin: 10px 0 10px 90px;
+    float: left;
+}
+
+.contentFooter figure{
+    float: right;
+    margin: 7px 90px 8px 0;
+}

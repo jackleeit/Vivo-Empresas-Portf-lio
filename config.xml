@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+	xmlns:gap= "http://phonegap.com/ns/1.0"
+	id= "Q92WW3S2GC.br.com.wunderman.vivo.portifoliodigital"
+	version= "0.0.2">
+
+	<name>Portfólio Telefônica Vivo</name> 
+
+	<description>
+		A Telefônica Vivo é pioneira em soluções integradas, com o maior portfólio de produtos e serviços, a maior cobertura e melhor sinal, para empresas de qualquer tamanho e perfil.  
+		Este aplicativo contém o nosso portfólio digital com detalhamento de todas as soluções de de voz, dados, TI e móveis, e é destinado aos nossos Gerentes de Negócio.
+	</description>
+
+	<author href="https://github.com/fernandimmd"
+			email="fernandim@gmail.com">
+	</author>
+
+	<gap:splash src="./Assets/img/splash.png" width="768" height="1024" gap:platform="webos"/>
+	
+	<icon src="./Assets/img/icon57.png" width="57" height="57" gap:platform="webos" />
+	<icon src="./Assets/img/icon72.png" gap:platform="ios" width="72" height="72" gap:platform="webos" />
+	<icon src="./Assets/img/icon114.png" width="114" height="114" gap:platform="webos" />
+	
+	<gap:platforms>
+		<gap:platform name="android" minVersion="2.1" />
+		<gap:platform name="webos" />
+	</gap:platforms>
+
+	<preference name="orientation" value="landscape" />
+	<preference name="fullscreen" value="true" />
+	<preference name="webviewbounce" value="false" />
+	
+	<feature name="http://api.phonegap.com/1.0/device"/>
+	<feature name="http://api.phonegap.com/1.0/network"/>
+	
+	<access origin=".*" />
+</widget>

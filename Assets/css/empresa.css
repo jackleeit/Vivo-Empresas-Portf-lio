@@ -1,0 +1,21 @@
+/*
+    Document   : empresa
+    Created on : Aug 28, 2012, 12:23:54 PM
+    Author     : leej
+    Description:
+        CSS para "A Empresa"
+*/
+
+#base{
+    background: transparent url('../img/bg/bg-empresa.jpg') no-repeat center top !important;
+}
+
+#content{
+    top: -3px !important;
+}
+
+#main{
+    width: 849px !important;
+    height: 658px !important;
+    background: #354E5B !important;
+}

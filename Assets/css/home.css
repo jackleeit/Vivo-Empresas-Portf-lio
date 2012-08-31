@@ -1,0 +1,45 @@
+/*
+    Document   : home
+    Created on : Aug 28, 2012, 11:37:55 AM
+    Author     : leej
+    Description:
+        CSS para a home
+*/
+
+#base{
+    background: transparent url('../img/bg/bg-home.jpg') no-repeat center top !important;
+}
+
+#content{
+    top: 0 !important;
+}
+
+#main{
+    width: 514px;
+    height: 655px !important;
+    background: none !important;
+}
+
+#home{
+    width: 429px;
+    margin: 0;
+    position: relative;
+    top: 40px;
+}
+
+#home h2{
+    font-size: 34px !important;
+    color: #0AF !important;
+    margin: 0 0 18px 0 !important;
+    letter-spacing: -2px !important;
+    padding: 25px 0 0 53px !important;
+    background: transparent url('../img/bg/bg-vivo-home.png') no-repeat 0 0 !important;
+    text-indent: 0 !important;
+}
+
+#home p{
+    font-size: 14px !important;
+    color: #4C4C4C !important;
+    line-height: 17px !important;
+    padding: 0 0 0 53px !important;
+}

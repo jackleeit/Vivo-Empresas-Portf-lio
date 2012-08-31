@@ -1,0 +1,109 @@
+/*
+    Document   : solucoes_moveis
+    Created on : Aug 28, 2012, 1:54:48 PM
+    Author     : leej
+    Description:
+        CSS para seção "Soluções Móveis"
+*/
+
+#mainMenu #solucoesMoveisMenu{
+    visibility: visible;
+}
+
+.lightbox{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.overlay{
+	width: inherit;
+	height: inherit;
+	display: block;
+	background-color: #000;	
+	filter: alpha(opacity=90);
+	opacity: 0.9;
+}
+
+.videoContainer{
+	width: 735px;
+	height: 521px;
+	top: 32px;
+	left: 146px;
+	1padding: 8px 5px;
+	display: block;
+	position: absolute;
+}
+
+.videoContainer .overlay{
+	width: inherit;
+	height: inherit;
+	background-color: #FFF;
+	filter: alpha(opacity=10);
+	opacity: 0.1;
+	display: block;
+}
+
+.legenda{
+	color: #FFF;
+	width: 721px;
+	height: 63px;
+	position: absolute;
+	top: 8px;
+	left: 5px;
+	background: transparent url('../img/bg/lightbox_legenda_bg.png') repeat-x 0 0;
+}
+
+#closeLightbox{
+	width: 40px;
+	height: 40px;
+	text-indent: -10000px;
+	display: block;
+	float: right;
+	margin: 10px 10px 0 0;
+	background: transparent url('../img/btn/close_lightbox_btn.png') no-repeat center center;
+}
+
+.legenda span{
+	font-family: 'offs_b-webfont';
+	font-size: 22px;
+	display: block;
+	float: left;
+	margin: 20px 0 0 20px;
+}
+
+#m2mVideo{
+	position: absolute;
+	top: 71px;
+	left: 5px;	
+}
+
+#pageVideo{
+	width: 450px;
+	height: 290px;
+	position: relative;
+	margin: 30px 0 0 0;
+}
+
+#pageVideo video{
+	margin: 10px;
+	position: relative;
+	z-index: 10;
+}
+
+.pageVideoOverlay{
+	width: inherit;
+	height: inherit;
+	background-color: #27414F;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+	display: block;
+	border-radius: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;	
+}

@@ -1,0 +1,11 @@
+/*
+    Document   : solucoes_ti
+    Created on : Aug 28, 2012, 6:36:47 PM
+    Author     : leej
+    Description:
+        CSS para seção "Soluções de TI"
+*/
+
+#mainMenu #solucoesTIMenu{
+    visibility: visible;
+}

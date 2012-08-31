@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html xmlns:og="http://ogp.me/ns#">
+    <head>
+        <!-- METAS COMUNS -->
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-language" content="pt-br" />
+        <meta name="Language" content="Portuguese">
+
+        <meta name="Author" content="Wunderman">
+        <meta name="Distribution" content="Global">
+        <meta name="Robots" content="index,follow">
+
+        <!-- METAS DO PROJETO -->
+        <meta name="Description" content="" />
+        <meta name="Keywords" content="" />
+        <meta name="Copyright" content="">
+        <meta name="Expires" content="">
+
+        <title>Vivo Empresas</title>
+
+        <!-- METAS DO FACEBOOK -->
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content=""/>
+
+	<link rel="apple-touch-icon" href="../Assets/img/icon72.png" /> <!-- Iphone / Ipad 72x72 -->
+	<link rel="apple-touch-startup-image" href="../Assets/img/splash.png" /><!-- Iphone 320x460 / Ipad 1004x768 -->
+	<meta name="viewport" content="user-scalable=no, width=device-width" /> <!-- Prevent Scaling -->
+	<meta name="apple-mobile-web-app-capable" content="yes" /><!-- Eliminate url and button bars if added to home screen -->
+
+	<script src="phonegap.js"></script>
+
+        <!-- FAVICON e CSS -->
+        <link rel="shortcut icon" type="image/x-icon" href="../Assets/img/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="../Assets/css/layoutMobile.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="../Assets/css/solucoes_voz.css" media="all" />
+    </head>
+    <body class="liquidy">
+        <div id="base">
+            <header id="header">
+                <nav>
+                    <ul id="mainMenu">
+                        <li id="navHomeItem">
+                            <a href="../index.html" title="Vivo Empresas">Vivo Empresas</a>
+                        </li>
+                        <li>
+                            <a href="../a_empresa.html" title="A Empresa" class="arrowDown">A Empresa</a>
+                        </li>
+                        <li>
+                            <a href="../solucoes_moveis/index.html" title="Soluções Móveis" class="arrowDown">Soluções Móveis</a>
+                            <ul id="solucoesMoveisMenu" class="subMenu">
+                                <li id="psVozCorporativa">
+                                    <a href="../solucoes_moveis/p_e_s_de_voz_corporativa.html" title="P&amp;S de Voz Corporativa">P&amp;S de Voz Corporativa</a>
+                                </li>
+                                <li id="servicosGestao">
+                                    <a href="../solucoes_moveis/servicos_de_gestao.html" title="Serviços de Gestão">Serviços<br/>de Gestão</a>
+                                </li>
+                                <li id="vivoDireto">
+                                    <a href="../solucoes_moveis/vivo_direto.html" title="Vivo Direto">Vivo<br/>Direto</a>
+                                </li>
+                                <li id="mensageria">
+                                    <a href="../solucoes_moveis/mensageria.html" title="Mensageria">Mensageria</a>
+                                </li>
+                                <li id="vivoInternet">
+                                    <a href="../solucoes_moveis/vivo_internet.html" title="Vivo Internet">Vivo<br/>Internet</a>
+                                </li>
+                                <li id="solucoesBlackBerry">
+                                    <a href="../solucoes_moveis/solucoes_blackberry.html" title="Soluções BlackBerry">Soluções<br/>BlackBerry</a>
+                                </li>
+                                <li id="m2m">
+                                    <a href="../solucoes_moveis/m2m.html" title="M2M">M2M</a>
+                                </li>
+                                <li id="telecomManagement">
+                                    <a href="../solucoes_moveis/telecom_management.html" title="Telecom Management">Telecom<br/>Management</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../solucoes_de_ti/index.html" title="Soluções de TI" class="arrowDown">Soluções de TI</a>
+                            <ul id="solucoesTIMenu" class="subMenu">
+                                <li id="infraTI">
+                                    <a href="../solucoes_de_ti/infra_de_ti.html" title="Infra de TI">Infra de TI</a>
+                                </li>
+                                <li id="segurancaInformacao">
+                                    <a href="../solucoes_de_ti/seguranca_da_informacao.html" title="Segurança da Informação">Segurança<br/>da Informação</a>
+                                </li>
+                                <li id="produtividadeUsuario">
+                                    <a href="../solucoes_de_ti/produtividade_ao_usuario.html" title="Produtividade ao Usuário">Produtividade ao Usuário</a>
+                                </li>
+                                <li id="colaboracao">
+                                    <a href="../solucoes_de_ti/colaboracao.html" title="Colaboração">Colaboração</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../solucoes_de_dados/index.html" title="Soluções de Dados" class="arrowDown">Soluções de Dados</a>
+                            <ul id="solucoesDadosMenu" class="subMenu">
+                                <li id="ipInternet">
+                                    <a href="../solucoes_de_dados/ip_internet.html" title="IP Internet">IP Internet</a>
+                                </li>
+                                <li id="vpn">
+                                    <a href="../solucoes_de_dados/vpn.html" title="VPN">VPN</a>
+                                </li>
+                                <li id="smart">
+                                    <a href="../solucoes_de_dados/smart.html" title="Smart">Smart</a>
+                                </li>
+                                <li id="metrolan">
+                                    <a href="../solucoes_de_dados/metrolan.html" title="Metrolan">Metrolan</a>
+                                </li>
+                                <li id="servicosInternacionais">
+                                    <a href="../solucoes_de_dados/servicos_internacionais.html" title="Serviços Internacionais">Serviços Internacionais</a>
+                                </li>
+                                <li id="cdn">
+                                    <a href="../solucoes_de_dados/cdn.html" title="CDN">CDN</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="lastItem">
+                            <a href="index.html" title="Soluções de Voz" class="arrowDown ativo">Soluções de Voz</a>
+                            <ul id="solucoesVozMenu" class="subMenu">
+                                <li id="vozTradicional">
+                                    <a href="voz_tradicional.html" title="Voz Tradicional">Voz Tradicional</a>
+                                </li>
+                                <li id="vozAvancada">
+                                    <a href="voz_avancada.html" title="Voz Avançada" class="ativo">Voz Avançada</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <hr />
+
+            <div id="content">
+                <div id="main">
+                    <section id="solucoesVoz" class="wrapper">
+                        <article>
+
+                            <h2>Voz Avançada</h2>
+
+                            <div id="accordion">
+
+                                <h3><a title="Serviços de Relacionamento 0800" href="#">Serviços de Relacionamento 0800</a></h3>
+                                <div class="accordionContent">
+                                    <p>
+                                        O Serviço 0800 coloca à disposição das empresas um número não geográfico
+										que funciona como um canal de comunicação para todo o Brasil. Neste canal
+										o valor das ligações é inteiramente custeado pelo provedor de serviço.
+                                    </p>
+                                    <p>
+                                        Este serviço cria um canal de comunicação amigável com seus consumidores,
+										pois é gratuito. Também gera melhor gerenciamento de atendimento e maior
+										conhecimento do perfil dos usuários (através das ferramentas disponíveis
+										na Rede Inteligente).
+                                    </p>
+
+                                    <h4>Características</h4>
+									<p>Tem as seguintes aplicações:</p>
+                                    <ol>
+                                        <li>
+											Atendimento a Clientes: o cliente disponibilizará um número 0800 exclusivo para
+											que os consumidores esclareçam qualquer tipo de dúvida, reclamações e/ou sugestões.
+										</li>
+                                        <li>
+											Fomento de Vendas (Interna e Externa): todos os dias, de qualquer lugar do Brasil,
+											usando apenas um telefone, o cliente pode receber pedidos de produtos.
+										</li>
+                                        <li>
+											Mecanismo Promocional: o número pode ser utilizado por tempo limitado para
+											divulgar informações específicas de seus produtos/serviços.
+										</li>
+                                        <li>
+											Interatividade: o cliente poderá usar o 0800 para aumentar a
+											interatividade com seus consumidores.
+										</li>
+                                    </ol>
+
+                                    <h4>Benefícios</h4>
+                                    <ul>
+                                        <li>
+                                            Gera mais negócios, pois a empresa pode realizar as vendas por telefone.
+                                        </li>
+										<li>Gera rapidez e qualidade no atendimento a clientes.</li>
+										<li>
+											Proporciona maior flexibilidade de atendimentos. Através de uma programação
+											baseada em horário, local e dia da semana, é possível encaminhar chamadas
+											conforme a necessidade e a estratégia de atendimento.
+										</li>
+										<li>Possibilita a definição de abrangência para o recebimento de chamadas em determinada região.</li>
+                                        <li>
+											Permite a realização de chamadas gratuitas para a empresa através de um número único
+											que identifica uma imagem corporativa da contratante em todo o país.
+										</li>
+                                        <li>
+											Gera economia, pois os descontos são progressivos em função do volume de ligações recebidas.
+										</li>
+                                    </ul>
+                                </div>
+
+
+                                <h3><a title="Serviços de Relacionamento 0300" href="#">Serviços de Relacionamento 0300</a></h3>
+                                <div class="accordionContent">
+                                    <p>
+                                        É um serviço de voz caracterizado por um único número nacional semelhante ao 0800
+										com  tarifas compartilhadas (split charge) entre o usuário que origina (Assinante A)
+										e o receptor da chamada (Assinante B). Os valores das chamadas serão sempre compartilhados
+										entre o usuário 0300 (assinante A) e assinante 0300 (assinante B).
+                                    </p>
+
+                                    <h4>Características</h4>
+                                    <ul>
+                                        <li>Vendas on-line.</li>
+										<li>Promoções especiais.</li>
+										<li>Home banking.</li>
+										<li>Telemarketing.</li>
+										<li>Pedidos de vendedores.</li>
+										<li>Consultas de estoque e preços.</li>
+                                    </ul>
+
+                                    <h4>Benefícios</h4>
+                                    <ul>
+                                        <li>
+											Redução de custos com espaços físicos dedicados ao
+											atendimento público (salas, estabelecimentos, etc.).
+										</li>
+                                        <li>
+											Economia: parte da despesa com ligações é compartilhada com o cliente.
+										</li>
+                                        <li>
+											Mesmo Número: possibilidade de realização de planos de marketing e campanhas
+											promocionais pela facilidade de memorização da sua marca e de um único número para contato.
+										</li>
+										<li>Atendimento (apenas no estado de São Paulo).</li>
+                                    </ul>
+                                </div>
+
+
+                                <h3><a title="Serviços de Relacionamento URA" href="#">Serviços de Relacionamento URA</a></h3>
+                                <div class="accordionContent">
+                                    <p>
+                                        Temos uma plataforma com estrutura dedicada para oferecer atendimento personalizado,
+										automatizado e em grande escala, garantindo a eficiência dos serviços prestados aos
+										clientes e possibilitando um grande fluxo de ofertas ao 0800 e ao 0300.
+                                    </p>      
+
+                                    <h4>Características</h4>
+                                    <ul>
+                                        <li>Árvore de navegação.</li>
+                                        <li>Acesso e busca de informação em banco de dados.</li>
+                                        <li>Senha de acesso ao serviço.</li>
+										<li>Votação/Pesquisa/Quiz.</li>
+										<li>Cobrança pela conta do 0800.</li>
+                                    </ul>
+
+                                    <h4>Benefícios</h4>
+                                    <ul>
+                                        <li>Conversão de números em voz.</li>
+                                        <li>Acesso aos relatórios via Web.</li>
+                                        <li>Locução em estúdio.</li>
+										<li>Ausência de investimento fixo.</li>
+										<li>Contingência de plataformas.</li>
+										<li>Melhor aproveitamento do espaço físico.</li>
+										<li>Gravação de mensagens.</li>
+                                    </ul>
+                                </div>
+
+
+                                <h3><a title="Business Map" href="#">Business Map</a></h3>
+                                <div class="accordionContent">
+                                    <p>
+                                        Nosso serviço de Business Map é inovador e exclusivo.
+										Consiste em uma ferramenta inteligente que mapeia as ligações
+										recebidas pela sua empresa e identifica as regiões que mais
+										fazem contato com você, para que sua empresa possa direcionar
+										os esforços de marketing por região, economizando em custos de campanha.
+                                    </p>
+
+                                    <h4>Características</h4>
+                                    <ul>
+                                        <li>Gera relatórios gerenciais.</li>
+                                        <li>Seleciona destinos de atendimento conforme a origem da chamada.</li>
+                                        <li>Reencaminha o atendimento em caso de congestionamento.</li>
+                                    </ul>									
+
+                                    <h4>Benefícios</h4>
+                                    <ul>
+                                        <li>Agendamento de atendimento por horário e data.</li>
+										<li>Restrições de chamadas por origem e tipo de terminal (telefone público ou móvel).</li>
+										<li>Distribuição inteligente das chamadas em cada Central de Atendimento.</li>
+                                    </ul>
+                                </div>																														
+
+                            </div>
+
+                        </article>
+                    </section>
+                </div>
+            </div>
+
+            <hr />
+
+            <footer id="footer" class="bottom">
+                <section class="wrapper">
+                    <article class="contentFooter">
+                        <p>&copy; 2012 Vivo . Todos os direitos reservados</p>
+                    </article>
+                </section>
+            </footer>
+        </div>
+
+        <!-- Chamada do Jquery -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='../Assets/js/addons/jquery.js' type='text/javascript'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <script type="text/javascript" src="../Assets/js/addons/iscroll-min.js"></script>
+
+        <script type="text/javascript" src="../Assets/js/accordion.js"></script>
+
+        <!-- Controle da Página Atual -->
+        <script type="text/javascript" charset="utf-8" src="../Assets/js/index.js"></script>
+    </body>
+</html>

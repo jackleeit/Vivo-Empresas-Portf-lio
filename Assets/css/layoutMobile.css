@@ -1,0 +1,488 @@
+/*
+ * Importar estilos de addons e defaults
+*/
+
+@import url("_base/defaults.css");
+
+/*
+        fonte embedada
+*/
+@font-face {
+    font-family: 'offs_b-webfont';
+    src: url('../fonts/offs_b-webfont.eot');
+    src:    url('../fonts/offs_b-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/offs_b-webfont.woff') format('woff'),
+        url('../fonts/offs_b-webfont.ttf') format('truetype'),
+        url('../fonts/offs_b-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'vivo-bold-webfont';
+    src: url('../fonts/vivo-bold-webfont.eot');
+    src:    url('../fonts/vivo-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/vivo-bold-webfont.woff') format('woff'),
+        url('../fonts/vivo-bold-webfont.ttf') format('truetype'),
+        url('../fonts/vivo-bold-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'vivo-light-webfont';
+    src: url('../fonts/vivo-light-webfont.eot');
+    src:    url('../fonts/vivo-light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/vivo-light-webfont.woff') format('woff'),
+        url('../fonts/vivo-light-webfont.ttf') format('truetype'),
+        url('../fonts/vivo-light-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'offs_-webfont';
+    src: url('../fonts/offs_-webfont.eot');
+    src:    url('../fonts/offs_-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/offs_-webfont.woff') format('woff'),
+        url('../fonts/offs_-webfont.ttf') format('truetype'),
+        url('../fonts/offs_-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+ * Define o aspecto principal, como cores e fundos do site.
+*/
+
+#base{
+    width: 1024px;
+    position: relative;
+    font-family: offs_b-webfont;
+    background: transparent url('../img/bg/interna_bg.jpg') no-repeat center top;
+}
+
+body.liquidy #base{
+    min-height: 768px;
+}
+
+@media screen and (max-width: 990px) {
+    #base{
+        background-color: #FF0000;
+    }
+}
+
+
+/* Navegação */
+
+.internaBtn{
+    width: 239px;
+    height: 54px;
+    color: #FFF;
+    font-family: offs_b-webfont;
+    text-decoration: none;
+    line-height: 54px;
+    padding: 0 0 0 50px;
+    position: absolute;
+    bottom: 37px;
+    background: transparent url('../img/btn/bt-interna.png') no-repeat 0 0;
+}
+
+.internaLargeBtn{
+    width: 290px;
+    height: 54px;
+    color: #FFF;
+    font-family: offs_b-webfont;
+    text-decoration: none;
+    line-height: 54px;
+    padding: 0 0 0 50px;
+    position: absolute;
+    bottom: 37px;
+    background: transparent url('../img/btn/bt-interna-large.png') no-repeat 0 0;
+}
+
+.internaExtraLargeBtn{
+    width: 384px;
+    height: 54px;
+    color: #FFF;
+    font-family: offs_b-webfont;
+    text-decoration: none;
+    line-height: 54px;
+    padding: 0 0 0 50px;
+    position: absolute;
+    bottom: 37px;
+    background: transparent url('../img/btn/bt-interna-extra-large.png') no-repeat 0 0;
+}
+
+#mainMenu{
+    width: inherit;
+    height: 83px;
+    position: relative;
+    background: transparent url('../img/btn/nav_top_bg.png') repeat-x scroll left bottom;
+}
+
+#mainMenu li{
+    width: 169px;
+    height: 80px;
+    float: left;
+    border-left: solid 1px #b6b6b6;
+    background: #E8E8E8 url('../img/btn/nav_top_item_bg.png') repeat-x scroll 0 0;
+}
+
+#mainMenu li a{
+    height: inherit;
+    color: #4C4C4C;
+    font-size: 14px;
+    border-left: solid 1px #FFF;
+    line-height: 80px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+#mainMenu .arrowDown:hover,
+#mainMenu .arrowDown.ativo{
+    width: 170px;
+    height: 87px;
+    color: #FFF;
+    z-index: 500;
+    border-left: none;
+    background: transparent url('../img/btn/btn-arrow-down.png') no-repeat scroll 0 0;
+}
+
+#mainMenu .subMenu{    
+	visibility: hidden;
+    width: 1024px;
+    height: 75px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background: #3783A8 url('../img/btn/subnav_top_bg.png') repeat-x scroll left bottom;
+}
+
+#mainMenu .subMenu li{
+    width: 128px;
+    height: inherit;
+    border: none;
+    background: transparent;
+}
+
+#mainMenu .subMenu li a{
+    border: none;
+    height: 36px;
+    color: #005580;
+    font-size: 12px;
+    line-height: normal;
+    text-align: left;
+    margin: 20px 0 0 0;
+    padding: 0 0 0 40px;
+}
+
+#mainMenu .subMenu li a:hover,
+#mainMenu .subMenu li .ativo{
+    color: #FFF;
+    background-position: 0 -36px !important;
+}
+
+#mainMenu #psVozCorporativa{
+    margin: 0 10px 0 20px;
+}
+
+#mainMenu #psVozCorporativa a{
+    background: transparent url('../img/btn/ps_voz_corporativa_icon.png') no-repeat scroll 0 0;
+}
+
+#mainMenu #servicosGestao{
+    width: 120px;
+}
+
+#mainMenu #servicosGestao a{
+    background: transparent url('../img/btn/servicos_gestao_icon.png') no-repeat scroll 0 0;
+}
+
+#mainMenu #vivoDireto{
+    width: 122px;
+}
+
+#mainMenu #vivoDireto a{
+    background: transparent url('../img/btn/vivo_direto_icon.png') no-repeat scroll 0 0;
+}
+
+#mainMenu #mensageria a{
+    line-height: 36px;
+    background: transparent url('../img/btn/mensageria_icon.png') no-repeat scroll 0 0;
+}
+
+#mainMenu #vivoInternet{
+    width: 117px;
+}
+
+#mainMenu #vivoInternet a{
+    background: transparent url('../img/btn/vivo_internet_icon.png') no-repeat scroll 0 0;
+}
+
+#mainMenu #solucoesBlackBerry{
+    width: 125px;
+}
+
+#mainMenu #solucoesBlackBerry a{
+    background: transparent url('../img/btn/solucoes_blackberry_icon.png') no-repeat scroll 0 0;
+}
+
+#mainMenu #m2m{
+    width: 107px;
+}
+
+#mainMenu #m2m a{
+    line-height: 36px;
+    background: transparent url('../img/btn/m2m_icon.png') no-repeat scroll 0 0;
+}
+
+#mainMenu #telecomManagement a{
+    background: transparent url('../img/btn/telecom_management_icon.png') no-repeat scroll 0 0;
+}
+
+#mainMenu #infraTI{
+    margin: 0 37px 0 210px;
+}
+
+#mainMenu #infraTI a{
+    line-height: 36px;
+    background: transparent url('../img/btn/infra_ti_icon.png') no-repeat scroll 0 0;
+}
+
+#mainMenu #segurancaInformacao{
+    width: 140px;
+    margin: 0 20px 0 0;
+}
+
+#mainMenu #segurancaInformacao a{
+    background: transparent url('../img/btn/seguranca_informacao_icon.png') no-repeat scroll 0 0;
+}
+
+#mainMenu #produtividadeUsuario{
+    margin: 0 30px 0 0;
+}
+
+#mainMenu #produtividadeUsuario a{
+    background: transparent url('../img/btn/produtividade_usuario_icon.png') no-repeat scroll 0 0;
+}
+
+#mainMenu #colaboracao a{
+    line-height: 36px;
+    background: transparent url('../img/btn/colaboracao_icon.png') no-repeat scroll 0 0;
+}
+
+#mainMenu #ipInternet{
+    margin: 0 10px 0 133px;
+}
+
+#mainMenu #ipInternet a{
+    line-height: 36px;
+    background: transparent url('../img/btn/ip_internet_icon.png') no-repeat scroll 0 0;
+}
+
+#mainMenu #vpn{
+    margin: 0 15px 0 0;
+}
+
+#mainMenu #vpn a{
+    line-height: 36px;
+    background: transparent url('../img/btn/vpn_icon.png') no-repeat scroll 0 0;
+}
+
+#mainMenu #smart{
+    margin: 0 10px 0 0;
+}
+
+#mainMenu #smart a{
+    line-height: 36px;
+    background: transparent url('../img/btn/smart_icon.png') no-repeat scroll 0 0;
+}
+
+#mainMenu #metrolan a{
+    line-height: 36px;
+    background: transparent url('../img/btn/metrolan_icon.png') no-repeat scroll 0 0;
+}
+
+#mainMenu #servicosInternacionais{
+    width: 140px;
+    margin: 0 0 0 10px;
+}
+
+#mainMenu #servicosInternacionais a{
+    background: transparent url('../img/btn/servicos_internacionais_icon.png') no-repeat scroll 0 0;
+}
+
+#mainMenu #cdn a{
+    line-height: 36px;
+    background: transparent url('../img/btn/cdn_icon.png') no-repeat scroll 0 0;
+}
+
+#mainMenu #vozTradicional{
+    margin: 0 20px 0 395px;
+}
+
+#mainMenu #vozTradicional a{
+    background: transparent url('../img/btn/voz_tradicional_icon.png') no-repeat scroll 0 0;
+}
+
+#mainMenu #vozAvancada{
+    width: 120px;
+}
+
+#mainMenu #vozAvancada a{
+    background: transparent url('../img/btn/voz_avancada_icon.png') no-repeat scroll 0 0;
+}
+
+
+#mainMenu #navHomeItem{
+    width: 172px;
+}
+
+#mainMenu #navHomeItem a{
+    background: transparent url('../img/btn/bt-home-vivo.png') no-repeat scroll center center;
+    text-indent: -10000px;
+    width: 171px;
+}
+
+
+/* Conteúdo */
+
+h3, h4, h5{
+    text-transform: uppercase;
+}
+
+h3{
+    font-size: 20px;
+    margin: 26px 0;
+}
+
+h4{
+    color: #0AF;
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+h5{
+    color: #FFF;
+    font-size: 12px;
+    margin: 15px 0;
+}
+
+h3 a{
+    color: #0AF;
+    text-decoration: none;
+    padding: 0 0 0 25px;
+    background: transparent url('../img/btn/blue_arrow_bullet.png') no-repeat left top;
+}
+
+.topicOn{
+    background-position: 0 -18px;
+}
+
+#accordion{
+    padding: 0 0 30px 15px;
+}
+
+.normalContent{
+    padding: 15px 0 30px 40px;
+}
+
+.accordionContent{
+    display: none;
+    padding: 0 0 0 25px;
+}
+
+#accordion .accordionContent ul,
+#main .normalContent ul{
+	list-style-type: disc;
+	padding: 0 0 0 15px;
+}
+
+#accordion .accordionContent ol,
+#main .normalContent ol{
+	list-style-type: decimal;
+	padding: 0 0 0 15px;
+}
+
+#accordion .accordionContent p,
+#main .normalContent p,
+#accordion .accordionContent ul li,
+#accordion .accordionContent ol li,
+#main .normalContent ul li,
+#main .normalContent ol li{
+    width: 90%;
+    padding: 0;
+    color: #FFF;
+    font-size: 12px;
+    font-family: "offs_b-webfont";
+    line-height: 15px;
+}
+
+#accordion .accordionContent ul li,
+#accordion .accordionContent ol li,
+#main .normalContent ul li,
+#main .normalContent ol li{
+    margin: 0 0 10px 0;
+}
+
+#content{
+    top: 72px;
+    position: relative;
+    overflow: hidden;
+}
+
+#main{
+    float: right;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    width: 514px;
+    height: 584px;
+    z-index: 1;
+    background: transparent url('../img/bg/interna_overlay.png') repeat-y 0 0;
+}
+
+#main section h2{
+    font-size: 28px;
+    color: #FFF;
+    padding: 15px 0;
+    margin: 0 0 15px 0;
+    text-indent: 40px;
+    letter-spacing: -1px;
+    background: #27414F;
+}
+
+#main section p{
+    font-size: 19px;
+    font-family: offs_-webfont;
+    color: #FFF;
+    width: 82%;
+    padding: 0 0 0 40px;
+    margin: 0 0 15px 0;
+    line-height: 24px;
+}
+
+
+/* Rodapé */
+
+#footer{
+    height: 30px;
+    background: transparent url('../img/bg/bg-footer.gif') repeat-x scroll left bottom;
+}
+
+#footer .contentFooter{
+    color: #0f6b99;
+    overflow: hidden;
+    font-size: 10px;
+    font-family: offs_b-webfont;
+    background: transparent url('../img/bg/bg-vivo-footer.png') no-repeat scroll 752px 5px;
+}
+
+.contentFooter p{
+    margin: 10px 0 10px 90px;
+    float: left;
+}

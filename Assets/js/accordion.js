@@ -8,7 +8,7 @@ $(document).ready(function(){
         accordionContent = ".accordionContent",
 
         animationConfig = {
-            duration: 'slow',
+            duration: 900,
             easing: 'swing'
         },
 

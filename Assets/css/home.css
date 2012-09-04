@@ -50,3 +50,83 @@
 	padding: 0 0 0 53px !important;
 	line-height: 13px !important;
 }
+
+#assistirVideo{
+	width: 151px;
+	height: 19px;
+	display: block;
+	text-indent: -10000px;
+	background: transparent url('../img/btn/assista_video.png') no-repeat 0 0;
+	margin: 15px 0 0 0;
+}
+
+.lightbox{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.overlay{
+	width: inherit;
+	height: inherit;
+	display: block;
+	background-color: #000;	
+	filter: alpha(opacity=90);
+	opacity: 0.9;
+}
+
+.videoContainer{
+	width: 735px;
+	height: 521px;
+	top: 123px;
+	left: 146px;
+	display: block;
+	position: absolute;
+}
+
+.videoContainer .overlay{
+	width: inherit;
+	height: inherit;
+	background-color: #FFF;
+	filter: alpha(opacity=10);
+	opacity: 0.1;
+	display: block;
+}
+
+.legenda{
+	color: #FFF;
+	width: 721px;
+	height: 63px;
+	position: absolute;
+	top: 8px;
+	left: 5px;
+	background: transparent url('../img/bg/lightbox_legenda_bg.png') repeat-x 0 0;
+}
+
+#closeLightbox{
+	width: 50px;
+	height: 50px;
+	text-indent: -10000px;
+	display: block;
+	float: right;
+	margin: 5px 5px 0 0;
+	background: transparent url('../img/btn/close_lightbox_btn.png') no-repeat center center;
+}
+
+.legenda span{
+	font-family: 'offs_b-webfont';
+	font-size: 22px;
+	display: block;
+	float: left;
+	margin: 20px 0 0 20px;
+}
+
+#vivoEmpresasVideo{
+	position: absolute;
+	top: 71px;
+	left: 5px;	
+}

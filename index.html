@@ -143,6 +143,9 @@
 								Aqui o seu cliente é o nosso cliente. E quando ele está satisfeito, sua empresa também vai bem.
 							</p>
 							<small>Maior cobertura 3G em número de municípios, conforme o site www.teleco.com.br de 14/8/2012.</small>
+							<p>
+								<a title="Assista ao vídeo" id="assistirVideo" href="#">Assista ao vídeo</a>
+							</p>
                         </article>
                     </section>
                 </div>
@@ -153,10 +156,28 @@
             <footer id="footer" class="bottom">
                 <section class="wrapper">
                     <article class="contentFooter">
-                        <p>&copy; 2012 Vivo . Todos os direitos reservados</p>
+                        <p><span class="copyrightSymbol">&copy;</span> 2012 Vivo . Todos os direitos reservados</p>
                     </article>
                 </section>
             </footer>
+			
+				<div class="lightbox">
+					<div class="overlay"></div>
+					<div class="videoContainer">
+						<div class="overlay"></div>				
+						<div class="legenda">
+							<span>Vivo Empresas</span>
+							<a id="closeLightbox" title="Fechar" href="#">Fechar</a>
+						</div>
+						<div id="vivoEmpresasVideo">
+							<video width="721" height="441" controls="controls" poster="Assets/img/bg/video_poster_large.jpg">								
+								<source src="Assets/videos/vivoempresas_portfolio.ogv" type="video/ogg" />
+								<source src="Assets/videos/vivoempresas_portfolio.mp4" type="video/mp4" />
+								Seu navegador não supporta a tag video.
+							</video>
+						</div>
+					</div>
+				</div>			
         </div>
 
         <!-- Chamada do Jquery -->
@@ -171,5 +192,35 @@
 
         <!-- Controle da Página Atual -->
         <script type="text/javascript" charset="utf-8" src="Assets/js/index.js"></script>
+		
+		<script type="text/javascript">
+					
+			$(function(){							
+				
+				function openLightbox(){
+					$(this).fadeIn("slow");
+				}
+				
+				function closeLightbox(){
+					$("#vivoEmpresasVideo video")[0].pause();
+					$(this).fadeOut("slow");
+				}
+				
+				$(".lightbox").bind('open', openLightbox);
+				
+				$(".lightbox").bind('close', closeLightbox);
+				
+				$("#assistirVideo").click(function(event){
+					event.preventDefault();
+					$(".lightbox").trigger("open");	
+				});
+										
+				
+				$("#closeLightbox").click(function(event){
+					event.preventDefault();
+					$(".lightbox").trigger("close");
+				});
+			});
+		</script>		
     </body>
 </html>

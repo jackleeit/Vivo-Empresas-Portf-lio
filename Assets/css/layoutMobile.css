@@ -114,6 +114,11 @@ body.liquidy #base{
     background: transparent url('../img/btn/bt-interna-extra-large.png') no-repeat 0 0;
 }
 
+.copyrightSymbol{
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+}
+
 #mainMenu{
     width: inherit;
     height: 83px;

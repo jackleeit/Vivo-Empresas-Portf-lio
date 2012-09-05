@@ -7,5 +7,5 @@
 */
 
 #mainMenu #solucoesDadosMenu{
-    visibility: visible;
+    display: block;
 }

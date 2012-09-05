@@ -7,7 +7,7 @@
 */
 
 #mainMenu #solucoesMoveisMenu{
-    visibility: visible;
+    display: block;
 }
 
 .lightbox{
@@ -33,7 +33,7 @@
 	width: 735px;
 	height: 521px;
 	top: 32px;
-	left: 146px;
+	left: 350px;
 	1padding: 8px 5px;
 	display: block;
 	position: absolute;

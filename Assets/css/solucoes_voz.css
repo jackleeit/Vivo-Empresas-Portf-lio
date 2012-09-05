@@ -7,5 +7,5 @@
 */
 
 #mainMenu #solucoesVozMenu{
-    visibility: visible;
+    display: block;
 }

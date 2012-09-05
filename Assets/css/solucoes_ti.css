@@ -7,5 +7,5 @@
 */
 
 #mainMenu #solucoesTIMenu{
-    visibility: visible;
+    display: block;
 }

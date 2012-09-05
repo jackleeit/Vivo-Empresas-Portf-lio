@@ -56,15 +56,26 @@
 */
 
 #base{
-    width: 1024px;
+    width: 100%;
     position: relative;
     font-family: offs_b-webfont;
     background: transparent url('../img/bg/interna_bg.jpg') no-repeat center top;
 }
 
+
+
 body.liquidy #base{
     min-height: 768px;
+	background-color:#f6f6f6 !important;		
 }
+
+	body.liquidy #base .wrapper{
+		width:1024px;
+	}
+	
+		body.liquidy #base .wrapper .wrapper{
+			width:auto !important;
+		}
 
 @media screen and (max-width: 990px) {
     #base{
@@ -73,6 +84,9 @@ body.liquidy #base{
 }
 
 
+#header{	
+	background: url("../img/bg/header_bg.png") repeat-x scroll 0 0 #E8E8E8;
+}
 /* Navegação */
 
 .internaBtn{
@@ -128,7 +142,6 @@ body.liquidy #base{
 #mainMenu{
     width: inherit;
     height: 83px;
-    position: relative;
     background: transparent url('../img/btn/nav_top_bg.png') repeat-x scroll left bottom;
 }
 
@@ -164,12 +177,10 @@ body.liquidy #base{
 }
 
 #mainMenu .subMenu{    
-	visibility: hidden;
+	display: none;
     width: 1024px;
     height: 75px;
-    position: absolute;
-    top: 80px;
-    left: 0;
+	margin: 0 auto;
     background: #3783A8 url('../img/btn/subnav_top_bg.png') repeat-x scroll left bottom;
 }
 
@@ -359,6 +370,15 @@ body.liquidy #base{
     width: 171px;
 }
 
+.subMenuContainer{
+	width: 100%;
+	background: url("../img/btn/subnav_top_bg.png") repeat-x scroll left bottom #3783A8;
+	height: 75px;
+    position: absolute;
+    top: 80px;
+    left: 0;	
+}
+
 
 /* Conteúdo */
 
@@ -497,4 +517,16 @@ h3 a{
 .contentFooter p{
     margin: 10px 0 10px 90px;
     float: left;
+}
+
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+#main{
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+}
 }

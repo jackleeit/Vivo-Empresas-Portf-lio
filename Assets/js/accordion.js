@@ -54,7 +54,11 @@ $(document).ready(function(){
                 .slideUp(animationConfig.duration, animationConfig.easing,
                     function(){
                         setTimeout(function(){
-                            myScroll.refresh();
+							
+							if (myScroll)
+							{
+								myScroll.refresh();
+							}                            
                         }, 0);
 
                     });
@@ -66,7 +70,10 @@ $(document).ready(function(){
         showContentCallback = function(){
 
             setTimeout(function(){
-                myScroll.refresh();
+				if (myScroll)
+				{
+					myScroll.refresh();
+				}                 
             }, 0);
         },
 
@@ -75,7 +82,10 @@ $(document).ready(function(){
             $currentItem.removeClass(itemOnClass);
 
             setTimeout(function(){
-                myScroll.refresh();
+				if (myScroll)
+				{
+					myScroll.refresh();
+				} 
             }, 0);
         };
 

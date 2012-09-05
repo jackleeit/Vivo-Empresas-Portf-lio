@@ -450,7 +450,7 @@ h3 a{
 #main{
     float: right;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
     position: relative;
     width: 514px;
     height: 584px;

@@ -9,3 +9,7 @@
 #mainMenu #solucoesVozMenu{
     display: block;
 }
+
+#solucoesVozMenuContainer{
+	z-index: 100;	
+}

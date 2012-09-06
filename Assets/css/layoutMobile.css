@@ -436,8 +436,13 @@ h3 a{
 
 #accordion .accordionContent ol,
 #main .normalContent ol{
-	list-style-type: decimal;
+	list-style: decimal;
 	padding: 0 0 0 15px;
+}
+
+#accordion .accordionContent ol li,
+#main .normalContent ol li{
+	display: list-item;
 }
 
 #accordion .accordionContent p,
@@ -470,7 +475,7 @@ h3 a{
 #main{
     float: right;
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: auto;
     position: relative;
     width: 514px;
     height: 584px;
@@ -525,6 +530,17 @@ h3 a{
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
+#main{
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
 #main{
     overflow-x: hidden !important;
     overflow-y: hidden !important;

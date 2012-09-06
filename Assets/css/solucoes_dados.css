@@ -9,3 +9,7 @@
 #mainMenu #solucoesDadosMenu{
     display: block;
 }
+
+#solucoesDadosMenuContainer{
+	z-index: 100;	
+}

@@ -11,100 +11,100 @@
 }
 
 #solucoesMoveisMenuContainer{
-	z-index: 100;	
+    z-index: 100;
 }
 
 .lightbox{
-	display: none;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 100;
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 
 .overlay{
-	width: inherit;
-	height: inherit;
-	display: block;
-	background-color: #000;		
-	opacity: 0.9;
-	filter: alpha(opacity=90); /* For IE8 and earlier */	
+    width: inherit;
+    height: inherit;
+    display: block;
+    background-color: #000;
+    opacity: 0.9;
+    filter: alpha(opacity=90); /* For IE8 and earlier */
 }
 
 /* IE7 */
 *+html .overlay{
-	height: 100%;
+    height: 100%;
 }
 
 .videoContainer{
-	width: 735px;
-	height: 521px;
-	top: 32px;
-	left: 350px;
-	display: block;
-	position: absolute;
+    width: 735px;
+    height: 521px;
+    top: 32px;
+    left: 25%;
+    display: block;
+    position: absolute;
 }
 
 .videoContainer .overlay{
-	width: inherit;
-	height: inherit;
-	background-color: #FFF;
-	display: block;	
-	opacity: 0.1;
-	filter: alpha(opacity=10); /* For IE8 and earlier */
+    width: inherit;
+    height: inherit;
+    background-color: #FFF;
+    display: block;
+    opacity: 0.1;
+    filter: alpha(opacity=10); /* For IE8 and earlier */
 }
 
 .legenda{
-	color: #FFF;
-	width: 721px;
-	height: 63px;
-	position: absolute;
-	top: 8px;
-	left: 6px;
-	background: transparent url('../img/bg/lightbox_legenda_bg.png') repeat-x 0 0;
+    color: #FFF;
+    width: 721px;
+    height: 63px;
+    position: absolute;
+    top: 8px;
+    left: 6px;
+    background: transparent url('../img/bg/lightbox_legenda_bg.png') repeat-x 0 0;
 }
 
 #closeLightbox{
-	width: 50px;
-	height: 50px;
-	text-indent: -10000px;
-	display: block;
-	float: right;
-	margin: 5px 5px 0 0;
-	background: transparent url('../img/btn/close_lightbox_btn.png') no-repeat center center;
+    width: 50px;
+    height: 50px;
+    text-indent: -10000px;
+    display: block;
+    float: right;
+    margin: 5px 5px 0 0;
+    background: transparent url('../img/btn/close_lightbox_btn.png') no-repeat center center;
 }
 
 .legenda span{
-	font-family: 'offs_b-webfont';
-	font-size: 22px;
-	display: block;
-	float: left;
-	margin: 20px 0 0 20px;
+    font-family: 'offs_b-webfont';
+    font-size: 22px;
+    display: block;
+    float: left;
+    margin: 20px 0 0 20px;
 }
 
 #m2mVideo{
-	position: absolute;
-	top: 71px;
-	left: 6px;	
+    position: absolute;
+    top: 71px;
+    left: 6px;
 }
 
 #pageVideo{
-	width: 450px;
-	height: 290px;
-	position: relative;
-	margin: 30px 0;
+    width: 450px;
+    height: 290px;
+    position: relative;
+    margin: 30px 0;
 }
 
-#pageVideo #openLightbox{	
-	width: 120px;
-	height: 120px;
-	text-indent: -100000px;
-	position: absolute;
-	top: 86px;
-	left: 164px;	
-	outline: 0;
-	display: block;	
-	background: transparent url('../img/bg/transparent_bg.png') no-repeat;	
+#pageVideo #openLightbox{
+    width: 120px;
+    height: 120px;
+    text-indent: -100000px;
+    position: absolute;
+    top: 86px;
+    left: 164px;
+    outline: 0;
+    display: block;
+    background: transparent url('../img/bg/transparent_bg.png') no-repeat;
 }

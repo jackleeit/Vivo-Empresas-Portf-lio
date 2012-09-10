@@ -66,13 +66,13 @@
 
 body.liquidy #base{
     min-height: 768px;
-	background-color:#f6f6f6 !important;		
+	background-color:#f6f6f6 !important;
 }
 
 	body.liquidy #base .wrapper{
 		width:1024px;
 	}
-	
+
 		body.liquidy #base .wrapper .wrapper{
 			width:auto !important;
 		}
@@ -84,7 +84,7 @@ body.liquidy #base{
 }
 
 
-#header{	
+#header{
 	background: url("../img/bg/header_bg.png") repeat-x scroll 0 0 #E8E8E8;
 }
 /* Navegação */
@@ -97,8 +97,7 @@ body.liquidy #base{
     text-decoration: none;
     line-height: 54px;
     padding: 0 0 0 50px;
-    position: absolute;
-    bottom: 37px;
+    margin: 30px 0 0 0;
     background: transparent url('../img/btn/bt-interna.png') no-repeat 0 0;
 }
 
@@ -110,21 +109,19 @@ body.liquidy #base{
     text-decoration: none;
     line-height: 54px;
     padding: 0 0 0 50px;
-    position: absolute;
-    bottom: 37px;
+    margin: 30px 0 0 0;
     background: transparent url('../img/btn/bt-interna-large.png') no-repeat 0 0;
 }
 
 .internaExtraLargeBtn{
-    width: 384px;
+    width: 334px;
     height: 54px;
     color: #FFF;
     font-family: offs_b-webfont;
     text-decoration: none;
     line-height: 54px;
     padding: 0 0 0 50px;
-    position: absolute;
-    bottom: 37px;
+    margin: 30px 0 0 0;
     background: transparent url('../img/btn/bt-interna-extra-large.png') no-repeat 0 0;
 }
 
@@ -136,7 +133,7 @@ body.liquidy #base{
 /* IE7 */
 *+html #header{
 	position: relative;
-	z-index: 500;	
+	z-index: 500;
 }
 
 #mainMenu{
@@ -176,7 +173,7 @@ body.liquidy #base{
     background: transparent url('../img/btn/btn-arrow-down.png') no-repeat scroll 0 0;
 }
 
-#mainMenu .subMenu{    
+#mainMenu .subMenu{
 	display: none;
     width: 1024px;
     height: 75px;
@@ -376,7 +373,7 @@ body.liquidy #base{
 	height: 75px;
     position: absolute;
     top: 80px;
-    left: 0;	
+    left: 0;
 }
 
 
@@ -526,9 +523,9 @@ h3 a{
 
 
 /* iPads (landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
 and (orientation : landscape) {
 #main{
     overflow-x: hidden !important;
@@ -537,9 +534,9 @@ and (orientation : landscape) {
 }
 
 /* iPads (portrait) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
 and (orientation : portrait) {
 #main{
     overflow-x: hidden !important;

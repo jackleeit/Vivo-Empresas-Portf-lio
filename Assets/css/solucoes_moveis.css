@@ -41,8 +41,7 @@
 .videoContainer{
     width: 735px;
     height: 521px;
-    top: 32px;
-    left: 25%;
+    top: 32px;    
     display: block;
     position: absolute;
 }

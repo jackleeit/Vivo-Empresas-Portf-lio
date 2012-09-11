@@ -221,10 +221,16 @@
             }
 
             $(function()
-            {
+            {	
+				var lightboxWidth = $(".lightbox").width(),
+						videoContainerWidth = 735;							
+			
+				$(".videoContainer").css({
+					left: ((lightboxWidth / 2) - (videoContainerWidth / 2)) + "px"
+				});			
 
                 //returns true if user is using one of the following mobile browsers
-                var ismobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);
+                var ismobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);				
 
                 if ( ! ismobile)
                 {
@@ -238,12 +244,12 @@
 
                 function openLightbox()
                 {
-                    $(this).fadeIn("slow");
+                    $(this).fadeIn("slow");						
 
-                    if (player)
-                    {
-                        player.playVideo();
-                    }
+					if (player && player.playVideo)
+					{
+						player.playVideo();
+					}
                 }
 
                 function closeLightbox(){

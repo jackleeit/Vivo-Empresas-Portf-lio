@@ -1,96 +1,87 @@
-$(document).ready(function(){
-    var accordion = (function(){
+$(document).ready(
+		function() {
+			var accordion = (function() {
 
-        var $currentItem,
+				var $currentItem,
 
-        itemOnClass = "topicOn",
+				itemOnClass = "topicOn",
 
-        accordionContent = ".accordionContent",
+				accordionContent = ".accordionContent",
 
-        animationConfig = {
-            duration: 900,
-            easing: 'swing'
-        },
+				animationConfig = {
+					duration : 900,
+					easing : 'swing'
+				},
 
-        showItem = function(event){
+				showItem = function(event) {
 
-            event.preventDefault();
+					event.preventDefault();
 
-            $currentItem = $(this);
+					$currentItem = $(this);
 
-            showContent();
-        },
+					showContent();
+				},
 
-        showContent = function(){
+				showContent = function() {
 
-            if ( ! $currentItem.hasClass(itemOnClass))
-            {
-                $currentItem
-                .addClass(itemOnClass)
-                .parent()
-                .next(accordionContent)
-                .slideDown(animationConfig.duration, animationConfig.easing, showContentCallback);
-            }
-            else
-            {
-                $currentItem
-                .parent()
-                .next(accordionContent)
-                .slideUp(animationConfig.duration, animationConfig.easing, hideContentCallback);
-            }
+					if (!$currentItem.hasClass(itemOnClass)) {
+						$currentItem.addClass(itemOnClass).parent().next(
+								accordionContent).slideDown(
+								animationConfig.duration,
+								animationConfig.easing, showContentCallback);
+					} else {
+						$currentItem.parent().next(accordionContent).slideUp(
+								animationConfig.duration,
+								animationConfig.easing, hideContentCallback);
+					}
 
-            hideContent();
-        },
+					hideContent();
+				},
 
-        hideContent = function(){
+				hideContent = function() {
 
-            $currentItem
-            .parent()
-            .siblings('h3')
-            .each(function(){
+					$currentItem.parent().siblings('h3').each(
+							function() {
 
-                $(this)
-                .next(accordionContent)
-                .slideUp(animationConfig.duration, animationConfig.easing,
-                    function(){
-                        setTimeout(function(){
-							
-							if (myScroll)
-							{
-								myScroll.refresh();
-							}                            
-                        }, 0);
+								$(this).next(accordionContent).slideUp(
+										animationConfig.duration,
+										animationConfig.easing, function() {
+											setTimeout(function() {
 
-                    });
-                    
-                $(this).find('a').removeClass(itemOnClass);
-            });
-        },
+												if (myScroll) {
+													myScroll.refresh();
+												}
+											}, 0);
 
-        showContentCallback = function(){
+										});
 
-            /*setTimeout(function(){
-				if (myScroll)
-				{
-					myScroll.refresh();
-				}                
-            }, 0);*/
-        },
+								$(this).find('a').removeClass(itemOnClass);
+							});
+				},
 
-        hideContentCallback = function(){
+				showContentCallback = function() {
 
-            $currentItem.removeClass(itemOnClass);
+					setTimeout(function(){
+						if (myScroll)
+						{
+							myScroll.refresh();
+						}                
+					}, 0);
+				},
 
-            /*setTimeout(function(){
-				if (myScroll)
-				{
-					myScroll.refresh();
-				} 
-            }, 0);*/
-        };
+				hideContentCallback = function() {
 
+					$currentItem.removeClass(itemOnClass);
 
-        $("#accordion").delegate('h3 a', 'click', showItem);
+					setTimeout(function(){
+						if (myScroll)
+						{
+							myScroll.refresh();
+						} 
+					}, 0);
+				};
 
-    })();
-});
+				$("#accordion").delegate('h3 a', 'click', showItem);
+
+			})();
+		});

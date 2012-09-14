@@ -10,7 +10,8 @@ function loaded(){
 	}
 
     myScroll = new iScroll($("#main section")[0], {
-        checkDOMChanges: false
+        checkDOMChanges: false,
+        vScrollbar: false
     });
 }
 

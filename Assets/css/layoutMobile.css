@@ -62,8 +62,6 @@
     background: transparent url('../img/bg/interna_bg.jpg') no-repeat center top;
 }
 
-
-
 body.liquidy #base{
     min-height: 768px;
 	background-color:#f6f6f6 !important;
@@ -469,15 +467,24 @@ h3 a{
     overflow: hidden;
 }
 
-#main{
+#main{	
     float: right;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: auto;	
+	1overflow-y /*\**/: scroll; /*Hack for IE8*/	
     position: relative;
     width: 514px;
-    height: 584px;
+    height: 584px;	
     z-index: 1;
     background: transparent url('../img/bg/interna_overlay.png') repeat-y 0 0;
+}
+
+#main section{
+	overflow: auto;
+}
+
+#main #home, #main #empresa{
+	overflow: visible;
 }
 
 #main section h2{
@@ -531,6 +538,20 @@ and (orientation : landscape) {
     overflow-x: hidden !important;
     overflow-y: hidden !important;
 }
+
+#mainMenu .arrowDown:hover{    
+	background: none !important;
+	color: #4C4C4C !important;
+}
+
+#mainMenu .arrowDown.ativo{
+    width: 170px !important;
+    height: 87px !important;
+    color: #FFF !important;
+    z-index: 500 !important;
+    border-left: none !important;
+    background: transparent url('../img/btn/btn-arrow-down.png') no-repeat scroll 0 0 !important;
+}
 }
 
 /* iPads (portrait) ----------- */
@@ -541,5 +562,19 @@ and (orientation : portrait) {
 #main{
     overflow-x: hidden !important;
     overflow-y: hidden !important;
+}
+
+#mainMenu .arrowDown:hover{    
+	background: none !important;
+	color: #4C4C4C !important;
+}
+
+#mainMenu .arrowDown.ativo{
+    width: 170px !important;
+    height: 87px !important;
+    color: #FFF !important;
+    z-index: 500 !important;
+    border-left: none !important;
+    background: transparent url('../img/btn/btn-arrow-down.png') no-repeat scroll 0 0 !important;
 }
 }

@@ -69,24 +69,24 @@ $(document).ready(function(){
 
         showContentCallback = function(){
 
-            setTimeout(function(){
+            /*setTimeout(function(){
 				if (myScroll)
 				{
 					myScroll.refresh();
-				}                 
-            }, 0);
+				}                
+            }, 0);*/
         },
 
         hideContentCallback = function(){
 
             $currentItem.removeClass(itemOnClass);
 
-            setTimeout(function(){
+            /*setTimeout(function(){
 				if (myScroll)
 				{
 					myScroll.refresh();
 				} 
-            }, 0);
+            }, 0);*/
         };
 
 

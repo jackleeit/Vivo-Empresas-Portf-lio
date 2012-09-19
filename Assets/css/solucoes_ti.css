@@ -5,11 +5,11 @@
     Description:
         CSS para seção "Soluções de TI"
 */
-
-#mainMenu #solucoesTIMenu{
-    display: block;
+#mainMenu #solucoesTIMenu {
+	display: block;
+	width: 544px;
 }
 
-#solucoesTIMenuContainer{
-	z-index: 100;	
+#solucoesTIMenuContainer {
+	z-index: 100;
 }

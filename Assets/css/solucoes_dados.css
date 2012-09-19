@@ -5,11 +5,11 @@
     Description:
         CSS para seção "Soluções de Dados"
 */
-
-#mainMenu #solucoesDadosMenu{
-    display: block;
+#mainMenu #solucoesDadosMenu {
+	display: block;
+	width: 754px;
 }
 
-#solucoesDadosMenuContainer{
-	z-index: 100;	
+#solucoesDadosMenuContainer {
+	z-index: 100;
 }

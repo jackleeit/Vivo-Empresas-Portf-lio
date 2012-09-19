@@ -29,7 +29,7 @@ $(document).ready(
 								accordionContent).slideDown(
 								animationConfig.duration,
 								animationConfig.easing, showContentCallback);
-					} else {
+					} else {						
 						$currentItem.parent().next(accordionContent).slideUp(
 								animationConfig.duration,
 								animationConfig.easing, hideContentCallback);
@@ -69,10 +69,8 @@ $(document).ready(
 					}, 0);
 				},
 
-				hideContentCallback = function() {
-
+				hideContentCallback = function() {				
 					$currentItem.removeClass(itemOnClass);
-
 					setTimeout(function(){
 						if (myScroll)
 						{

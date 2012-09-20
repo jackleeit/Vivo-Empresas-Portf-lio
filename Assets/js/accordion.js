@@ -66,7 +66,7 @@ $(document).ready(
 				},
 
 				showContentCallback = function() {		
-					clearInterval(interval);
+					
 					setTimeout(function(){
 						if (myScroll)
 						{

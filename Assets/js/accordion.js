@@ -82,16 +82,15 @@ $(document)
 									 * if(step <= 0) clearTimeout(interval); },
 									 * 20) }
 									 */
-								} else {
-									$currentItem.parent()
-											.next(accordionContent).slideUp(
-													animationConfig.duration,
-													animationConfig.easing,
-													hideContentCallback);
 								}
-
-								hideContent();
+							} else {
+								$currentItem.parent().next(accordionContent)
+										.slideUp(animationConfig.duration,
+												animationConfig.easing,
+												hideContentCallback);
 							}
+
+							hideContent();
 						},
 
 						hideContent = function() {

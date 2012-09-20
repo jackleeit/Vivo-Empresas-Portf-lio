@@ -22,7 +22,7 @@ $(document).ready(
 					showContent();
 				},
 
-				showContent = function() {
+				showContent = function() {			
 
 					if (!$currentItem.hasClass(itemOnClass)) {
 						$currentItem.addClass(itemOnClass).parent().next(
@@ -59,7 +59,12 @@ $(document).ready(
 							});
 				},
 
-				showContentCallback = function() {
+				showContentCallback = function() {									
+				
+						if (myScroll)
+						{
+							myScroll.scrollToElement("." + $currentItem.attr('class'), '900ms');
+						}						
 
 					setTimeout(function(){
 						if (myScroll)

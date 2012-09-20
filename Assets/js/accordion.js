@@ -1,3 +1,7 @@
+Math.easeInQuad = function (t, b, c, d) {
+	return c*(t/=d)*t + b;
+};
+
 $(document).ready(
 		function() {
 			
@@ -38,7 +42,22 @@ $(document).ready(
 						
 						if (myScroll && ($h3.get(0).offsetTop > maxAvailableHeight))
 						{
-							var now = 0;
+							var intervalo;
+							var t = new Date();
+							function createTween(begin, finish, duration, funcao)
+							{
+								duration = duration * 32;
+								var _c;
+								var change = finish - begin;
+								var time = 0;
+								intervalo = setInterval(function() {
+									_c = funcao(time++, begin, change, duration);
+									 myScroll.scrollTo(0, _c * -1, 5);
+									if (time > duration) clearInterval(intervalo);
+								}, 33);
+							}
+							createTween($h3.get(0).offsetTop, $h3.data('originalTopOffset'), 1, Math.easeInQuad);													
+							/*var now = 0;
 							var end = 100;
 							var step = 50;
 							var fim = $h3.data('originalTopOffset');
@@ -56,7 +75,7 @@ $(document).ready(
 							    if(step <= 0)
 							       clearTimeout(interval);
 							}, 20)
-						}
+						}*/
 					} else {						
 						$currentItem.parent().next(accordionContent).slideUp(
 								animationConfig.duration,

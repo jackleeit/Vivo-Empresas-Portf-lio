@@ -51,7 +51,7 @@ $(document).ready(
 							    now = (((end/100) * step));
 							    bounce = (now - (now/21));
 
-							    myScroll(0, ((diferencia / 100) * bounce) + fim, 5);
+							    myScroll.scrollTo(0, ((diferencia / 100) * bounce) + fim, 5);
 
 							    if(step <= 0)
 							       clearTimeout(interval);

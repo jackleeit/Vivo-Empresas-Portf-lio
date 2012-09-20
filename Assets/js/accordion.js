@@ -28,18 +28,18 @@ $(document).ready(
 						$currentItem.addClass(itemOnClass).parent().next(
 								accordionContent).slideDown(
 								animationConfig.duration,
-								animationConfig.easing, showContentCallback);
+								animationConfig.easing, showContentCallback);								
 					} else {						
 						$currentItem.parent().next(accordionContent).slideUp(
 								animationConfig.duration,
 								animationConfig.easing, hideContentCallback);
-					}
+					}					
 
 					hideContent();
 					if (myScroll)
 					{
-						//myScroll.scrollToElement("." + $currentItem.attr('class'), '900ms');
-					}						
+						//myScroll.scrollToElement("." + $currentItem.attr("class"), '900ms');
+					}					
 				},
 
 				hideContent = function() {
@@ -52,9 +52,9 @@ $(document).ready(
 										animationConfig.easing, function() {
 											setTimeout(function() {
 
-												if (myScroll) {
-													//myScroll.refresh();
-												}
+												/*if (myScroll) {
+													myScroll.refresh();
+												}*/
 											}, 0);
 
 										});
@@ -75,10 +75,10 @@ $(document).ready(
 				hideContentCallback = function() {					
 					$currentItem.removeClass(itemOnClass);
 					setTimeout(function(){
-						if (myScroll)
+						/*if (myScroll)
 						{
 							myScroll.refresh();
-						} 
+						} */
 					}, 0);
 				};
 

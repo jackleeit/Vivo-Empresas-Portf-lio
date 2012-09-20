@@ -36,6 +36,10 @@ $(document).ready(
 					}
 
 					hideContent();
+					if (myScroll)
+					{
+						myScroll.scrollToElement("." + $currentItem.attr('class'), '900ms');
+					}						
 				},
 
 				hideContent = function() {
@@ -59,13 +63,7 @@ $(document).ready(
 							});
 				},
 
-				showContentCallback = function() {									
-				
-						if (myScroll)
-						{
-							myScroll.scrollToElement("." + $currentItem.attr('class'), '900ms');
-						}						
-
+				showContentCallback = function() {							
 					setTimeout(function(){
 						if (myScroll)
 						{
@@ -74,7 +72,7 @@ $(document).ready(
 					}, 0);
 				},
 
-				hideContentCallback = function() {				
+				hideContentCallback = function() {					
 					$currentItem.removeClass(itemOnClass);
 					setTimeout(function(){
 						if (myScroll)

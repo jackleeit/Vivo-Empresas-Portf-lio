@@ -3,6 +3,7 @@ $(document).ready(
 			var accordion = (function() {
 
 				var $currentItem,
+				interval,
 
 				itemOnClass = "topicOn",
 
@@ -22,9 +23,8 @@ $(document).ready(
 					showContent();
 				},
 
-				showContent = function() {			
-
-					if (!$currentItem.hasClass(itemOnClass)) {
+				showContent = function() {
+					if (!$currentItem.hasClass(itemOnClass)) {						
 						$currentItem.addClass(itemOnClass).parent().next(
 								accordionContent).slideDown(
 								animationConfig.duration,
@@ -36,9 +36,11 @@ $(document).ready(
 					}					
 
 					hideContent();
+					
 					if (myScroll)
 					{
-						//myScroll.scrollToElement("." + $currentItem.attr("class"), '900ms');
+						var elem = $currentItem.get(0);
+						myScroll.scrollTo(elem.offsetLeft, elem.offsetTop, 5);
 					}					
 				},
 
@@ -63,7 +65,8 @@ $(document).ready(
 							});
 				},
 
-				showContentCallback = function() {							
+				showContentCallback = function() {		
+					clearInterval(interval);
 					setTimeout(function(){
 						if (myScroll)
 						{

@@ -2,6 +2,10 @@ Math.easeInQuad = function(t, b, c, d) {
 	return c * (t /= d) * t + b;
 };
 
+Math.easeOutQuad = function (t, b, c, d) {
+	return -c *(t/=d)*(t-2) + b;
+};
+
 $(document)
 		.ready(
 				function() {
@@ -34,6 +38,7 @@ $(document)
 
 						showContent = function() {
 							if (!$currentItem.hasClass(itemOnClass)) {
+								
 								$currentItem.addClass(itemOnClass).parent()
 										.next(accordionContent).slideDown(
 												animationConfig.duration,
@@ -44,8 +49,10 @@ $(document)
 
 								if (myScroll
 										&& ($h3.get(0).offsetTop > maxAvailableHeight)) {
-									var intervalo;
+									
+									var intervalo;									
 									var t = new Date();
+									
 									function createTween(begin, finish,
 											duration, funcao) {
 										duration = duration * 32;
@@ -60,9 +67,10 @@ $(document)
 												clearInterval(intervalo);
 										}, 33);
 									}
+									
 									createTween($h3.get(0).offsetTop, $h3
-											.data('originalTopOffset'), 1,
-											Math.easeInQuad);
+											.data('originalTopOffset'), 4,
+											Math.easeOutQuad);
 									/*
 									 * var now = 0; var end = 100; var step =
 									 * 50; var fim =
@@ -138,9 +146,6 @@ $(document)
 											this.offsetTop);
 									$(this).data('originalLeftOffset',
 											this.offsetLeft);
-									// console.log($(this).data('originalTopOffset')
-									// + " ; " +
-									// $(this).data('originalLeftOffset'));
 								});
 					})();
 				});

@@ -5,6 +5,8 @@ $(document).ready(
 
 				var $currentItem,
 				
+				interval,
+				
 				maxAvailableHeight = 584, 
 
 				itemOnClass = "topicOn",
@@ -35,9 +37,25 @@ $(document).ready(
 						var $h3 = $currentItem.parent();
 						
 						if (myScroll && ($h3.get(0).offsetTop > maxAvailableHeight))
-						{							
-							myScroll.scrollTo(0, $h3.data('originalTopOffset') * -1, 5);
-							//myScroll.scrollTo(0, 0, 5);
+						{
+							var now = 0;
+							var end = 100;
+							var step = 50;
+							var fim = $h3.data('originalTopOffset');
+							var inicio = $h3.get(0).offsetTop;
+							var diferencia = inicio - fim;
+
+							var interval = setInterval(function(){
+							    step--;
+
+							    now = (((end/100) * step));
+							    bounce = (now - (now/21));
+
+							    myScroll(0, ((diferencia / 100) * bounce) + fim, 5);
+
+							    if(step <= 0)
+							       clearTimeout(interval);
+							}, 20)
 						}
 					} else {						
 						$currentItem.parent().next(accordionContent).slideUp(
@@ -45,13 +63,7 @@ $(document).ready(
 								animationConfig.easing, hideContentCallback);
 					}					
 
-					hideContent();
-					
-					/*if (myScroll)
-					{
-						var elem = $currentItem.get(0);
-						myScroll.scrollTo(elem.offsetLeft, elem.offsetTop, 5);
-					}*/			
+					hideContent();						
 				},
 
 				hideContent = function() {
@@ -63,10 +75,6 @@ $(document).ready(
 										animationConfig.duration,
 										animationConfig.easing, function() {
 											setTimeout(function() {
-
-												/*if (myScroll) {
-													myScroll.refresh();
-												}*/
 											}, 0);
 
 										});

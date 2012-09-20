@@ -36,7 +36,8 @@ $(document).ready(
 						
 						if (myScroll && ($h3.get(0).offsetTop > maxAvailableHeight))
 						{							
-							myScroll.scrollTo(0, $h3.data('originalTopOffset'), 5);							
+							myScroll.scrollTo(0, $h3.data('originalTopOffset') * -1, 5);
+							//myScroll.scrollTo(0, 0, 5);
 						}
 					} else {						
 						$currentItem.parent().next(accordionContent).slideUp(

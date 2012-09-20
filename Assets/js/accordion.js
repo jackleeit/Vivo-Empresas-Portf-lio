@@ -38,7 +38,7 @@ $(document).ready(
 					hideContent();
 					if (myScroll)
 					{
-						myScroll.scrollToElement("." + $currentItem.attr('class'), '900ms');
+						//myScroll.scrollToElement("." + $currentItem.attr('class'), '900ms');
 					}						
 				},
 
@@ -53,7 +53,7 @@ $(document).ready(
 											setTimeout(function() {
 
 												if (myScroll) {
-													myScroll.refresh();
+													//myScroll.refresh();
 												}
 											}, 0);
 

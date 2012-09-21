@@ -50,46 +50,42 @@ $(document)
 								if (myScroll
 										&& ($h3.get(0).offsetTop > maxAvailableHeight)) {
 									
-									var intervalo;									
-									var t = new Date();
-									
-									function createTween(begin, finish,
-											duration, funcao) {
-										duration = duration * 32;
-										var _c;
-										var change = finish - begin;
-										var time = 0;
-										intervalo = setInterval(function() {
-											_c = funcao(time++, begin, change,
-													duration);
-											myScroll.scrollTo(0, _c * -1, 5);
-											if (time > duration)
-												clearInterval(intervalo);
-										}, 33);
-									}
-									
-									createTween($h3.get(0).offsetTop, $h3
-											.data('originalTopOffset'), 4,
-											Math.easeOutQuad);
 									/*
-									 * var now = 0; var end = 100; var step =
-									 * 50; var fim =
-									 * $h3.data('originalTopOffset'); var inicio =
-									 * $h3.get(0).offsetTop; var diferencia =
-									 * inicio - fim;
+									 * var intervalo; var t = new Date();
 									 * 
-									 * var interval = setInterval(function(){
-									 * step--;
+									 * function createTween(begin, finish,
+									 * duration, funcao) { duration = duration *
+									 * 32; var _c; var change = finish - begin;
+									 * var time = 0; intervalo =
+									 * setInterval(function() { _c =
+									 * funcao(time++, begin, change, duration);
+									 * myScroll.scrollTo(0, _c * -1, 5); if
+									 * (time > duration)
+									 * clearInterval(intervalo); }, 33); }
 									 * 
-									 * now = (((end/100) * step)); bounce = (now -
-									 * (now/21));
-									 * 
-									 * myScroll.scrollTo(0, ((((diferencia /
-									 * 100) * bounce) + fim)-10) * -1, 5);
-									 * 
-									 * if(step <= 0) clearTimeout(interval); },
-									 * 20) }
+									 * createTween($h3.get(0).offsetTop, $h3
+									 * .data('originalTopOffset'), 3,
+									 * Math.easeOutQuad);
 									 */
+									
+									 var now = 0; var end = 100; 
+									 var step =50; var fim =
+									  $h3.data('originalTopOffset'); var inicio =
+									  $h3.get(0).offsetTop; var diferencia =
+									  inicio - fim;
+									  
+									  var interval = setInterval(function(){
+									  step--;
+									  
+									  now = (((end/100) * step)); bounce = (now -
+									  (now/21));
+									  
+									  myScroll.scrollTo(0, ((((diferencia /
+									  100) * bounce) + fim)-10) * -1, 5);
+									  
+									  if(step <= 0) clearTimeout(interval); },
+									  20) }
+									 
 								}
 							} else {
 								$currentItem.parent().next(accordionContent)
@@ -98,7 +94,7 @@ $(document)
 												hideContentCallback);
 							}
 
-							hideContent();
+							hideContent();							
 						},
 
 						hideContent = function() {

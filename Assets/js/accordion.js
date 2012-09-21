@@ -35,7 +35,7 @@ $(document).ready(
 						if (myScroll
 								&& ($h3.get(0).offsetTop > maxAvailableHeight)) {
 								
-								myScroll.scrollToElement("#accordion", "1000ms");
+								myScroll.scrollToElement("article h2", "1000ms");
 						}			
 						
 						$currentItem.addClass(itemOnClass).parent().next(

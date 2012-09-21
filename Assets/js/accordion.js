@@ -2,8 +2,8 @@ Math.easeInQuad = function(t, b, c, d) {
 	return c * (t /= d) * t + b;
 };
 
-Math.easeOutQuad = function (t, b, c, d) {
-	return -c *(t/=d)*(t-2) + b;
+Math.easeOutQuad = function(t, b, c, d) {
+	return -c * (t /= d) * (t - 2) + b;
 };
 
 $(document)
@@ -38,7 +38,7 @@ $(document)
 
 						showContent = function() {
 							if (!$currentItem.hasClass(itemOnClass)) {
-								
+
 								$currentItem.addClass(itemOnClass).parent()
 										.next(accordionContent).slideDown(
 												animationConfig.duration,
@@ -49,7 +49,7 @@ $(document)
 
 								if (myScroll
 										&& ($h3.get(0).offsetTop > maxAvailableHeight)) {
-									
+
 									/*
 									 * var intervalo; var t = new Date();
 									 * 
@@ -67,26 +67,31 @@ $(document)
 									 * .data('originalTopOffset'), 3,
 									 * Math.easeOutQuad);
 									 */
-									
-									 var now = 0; var end = 100; 
-									 var step =50; var fim =
-									  $h3.data('originalTopOffset'); var inicio =
-									  $h3.get(0).offsetTop; var diferencia =
-									  inicio - fim;
-									  
-									  var interval = setInterval(function(){
-									  step--;
-									  
-									  now = (((end/100) * step)); bounce = (now -
-									  (now/21));
-									  
-									  myScroll.scrollTo(0, ((((diferencia /
-									  100) * bounce) + fim)-10) * -1, 5);
-									  
-									  if(step <= 0) clearTimeout(interval); },
-									  20) }
-									 
-								}
+
+									var now = 0;
+									var end = 100;
+									var step = 50;
+									var fim = $h3.data('originalTopOffset');
+									var inicio = $h3.get(0).offsetTop;
+									var diferencia = inicio - fim;
+
+									var interval = setInterval(
+											function() {
+												step--;
+
+												now = (((end / 100) * step));
+												bounce = (now - (now / 21));
+
+												myScroll
+														.scrollTo(
+																0,
+																((((diferencia / 100) * bounce) + fim) - 10)
+																		* -1, 5);
+
+												if (step <= 0)
+													clearTimeout(interval);
+											}, 20);
+
 							} else {
 								$currentItem.parent().next(accordionContent)
 										.slideUp(animationConfig.duration,
@@ -94,7 +99,7 @@ $(document)
 												hideContentCallback);
 							}
 
-							hideContent();							
+							hideContent();
 						},
 
 						hideContent = function() {

@@ -91,6 +91,7 @@ $(document)
 												if (step <= 0)
 													clearTimeout(interval);
 											}, 20);
+								}
 
 							} else {
 								$currentItem.parent().next(accordionContent)

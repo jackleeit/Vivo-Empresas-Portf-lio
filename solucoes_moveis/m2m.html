@@ -288,9 +288,13 @@
                 function openLightbox()
                 {
                     $(this).fadeIn("slow");	
-
+					var m2mVideo = $("#m2mVideo video")[0];
 					
-					
+					if (m2mVideo)
+					{
+						m2mVideo.webkitEnterFullscreen();
+					}
+										
 					if (player && player.playVideo)
 					{
 						player.playVideo();

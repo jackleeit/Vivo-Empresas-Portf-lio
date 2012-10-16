@@ -260,31 +260,6 @@
 					swfobject.embedSWF("../Assets/swf/player.swf", "m2mVideo", "721", "441", "10.0.0", "expressInstall.swf", flashvars, params, attributes);
                 }
 				
-				function disposeSWF() {
-					var m2mVideo = $("#m2mVideo")[0];
-					
-					
-					if (m2mVideo){
-						m2mVideo.style.display="none";
-						try{
-							m2mVideo.pauseVideo();
-						} catch (e){}
-					}
-				}
-				
-				function showSWF() {
-					var m2mVideo = $("#m2mVideo")[0];
-					
-					if (m2mVideo){
-						m2mVideo.style.display="block";
-						
-						try{
-							m2mVideo.resumeVideo();
-						} catch (e){}
-						
-					}
-				}
-
                 function openLightbox()
                 {
                     $(this).fadeIn("slow");	
@@ -295,17 +270,7 @@
 						m2mVideo.webkitEnterFullscreen();
 						m2mVideo.addEventListener("webkitendfullscreen", function(evt) { $("#m2mVideo video")[0].pause(); });
 						m2mVideo.play();
-					}
-										
-					if (player && player.playVideo)
-					{
-						player.playVideo();
-					}
-					else
-					{
-						showSWF();
-					}
-					
+					}					
                 }
 
                 function closeLightbox(){
@@ -315,17 +280,6 @@
                     {
                         m2mVideo.pause();
                     }
-					
-					
-
-                    if (player)
-                    {
-                        player.pauseVideo();
-                    }
-					else
-					{
-						disposeSWF();
-					}
 					
                     $(this).fadeOut("slow");
                 }

@@ -340,9 +340,22 @@ body.liquidy #base .wrapper .wrapper {
 		0;
 }
 
+#mainMenu #cdn {
+	width: 100px;
+}
+
 #mainMenu #cdn a {
 	line-height: 36px;
 	background: transparent url('../img/btn/cdn_icon.png') no-repeat scroll
+		0 0;
+}
+
+#mainMenu #dialWireless {
+}
+
+#mainMenu #dialWireless a {
+	line-height: 36px;
+	background: transparent url('../img/btn/dial_wireless_icon.png') no-repeat scroll
 		0 0;
 }
 

@@ -86,6 +86,7 @@
                                         <li id="metrolan"> <a href="../solucoes_de_dados/metrolan.html" title="Metrolan">Metrolan</a> </li>
                                         <li id="servicosInternacionais"> <a href="../solucoes_de_dados/servicos_internacionais.html" title="Serviços Internacionais">Serviços Internacionais</a> </li>
                                         <li id="cdn"> <a href="../solucoes_de_dados/cdn.html" title="CDN">CDN</a> </li>
+                                		<li id="dialWireless"><a href="../solucoes_de_dados/dial_wireless.html" title="Dial Wireless">Dial Wireless</a></li>										
                                     </ul>
                                 </div>
                             </li>
@@ -186,6 +187,7 @@
 
         <!-- Controle da Página Atual -->
         <script type="text/javascript" charset="utf-8" src="../Assets/js/index.js"></script>
+        <script type="text/javascript" charset="utf-8" src="../Assets/js/swfobject.js"></script>
         <script type="text/javascript">
             // Load the IFrame Player API code asynchronously.
             var tag = null;
@@ -194,7 +196,7 @@
             // Replace the 'ytplayer' element with an <iframe> and
             // YouTube player after the API code downloads.
             var player = null;
-
+			
             function onYouTubeIframeAPIReady() {
                 player = new YT.Player('m2mVideo', {
                     height: '441',
@@ -218,6 +220,8 @@
             function stopVideo() {
                 player.stopVideo();
             }
+			
+			
 
             $(function()
             {	
@@ -233,22 +237,69 @@
 
                 if ( ! ismobile)
                 {
-                    tag = document.createElement('script');
-                    tag.src = "https://www.youtube.com/iframe_api";
-                    firstScriptTag = document.getElementsByTagName('script')[0];
-                    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                    //tag = document.createElement('script');
+                    //tag.src = "https://www.youtube.com/iframe_api";
+                    //firstScriptTag = document.getElementsByTagName('script')[0];
+                    //firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-                    $('#m2mVideo').html("");
+					$('#m2mVideo').html("");
+					
+					var flashvars = {
+					};
+					var params = {
+						menu: "false",
+						scale: "noScale",
+						allowFullscreen: "true",
+						allowScriptAccess: "always",
+						bgcolor: "#000000"
+					};
+					
+					var attributes = {
+						url:"../Assets/videos/vivoempresas_portfolio.flv"
+					};
+					swfobject.embedSWF("../Assets/swf/player.swf", "m2mVideo", "721", "441", "10.0.0", "expressInstall.swf", flashvars, params, attributes);
                 }
+				
+				function disposeSWF() {
+					var m2mVideo = $("#m2mVideo")[0];
+					
+					
+					if (m2mVideo){
+						m2mVideo.style.display="none";
+						try{
+							m2mVideo.pauseVideo();
+						} catch (e){}
+					}
+				}
+				
+				function showSWF() {
+					var m2mVideo = $("#m2mVideo")[0];
+					
+					if (m2mVideo){
+						m2mVideo.style.display="block";
+						
+						try{
+							m2mVideo.resumeVideo();
+						} catch (e){}
+						
+					}
+				}
 
                 function openLightbox()
                 {
-                    $(this).fadeIn("slow");						
+                    $(this).fadeIn("slow");	
 
+					
+					
 					if (player && player.playVideo)
 					{
 						player.playVideo();
 					}
+					else
+					{
+						showSWF();
+					}
+					
                 }
 
                 function closeLightbox(){
@@ -258,12 +309,18 @@
                     {
                         m2mVideo.pause();
                     }
+					
+					
 
                     if (player)
                     {
                         player.pauseVideo();
                     }
-
+					else
+					{
+						disposeSWF();
+					}
+					
                     $(this).fadeOut("slow");
                 }
 

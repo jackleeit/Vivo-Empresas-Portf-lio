@@ -263,13 +263,13 @@
                 function openLightbox()
                 {
                     $(this).fadeIn("slow");	
-					var m2mVideo = $("#m2mVideo video")[0];
+					var m2mVideo = $("#m2mVideo video").get(0);
 					
 					if (m2mVideo)
-					{
-						m2mVideo.webkitEnterFullscreen();
-						m2mVideo.addEventListener("webkitendfullscreen", function(evt) { $("#m2mVideo video")[0].pause(); });
+					{						
+						m2mVideo.addEventListener("webkitendfullscreen", function(evt) { $("#m2mVideo video").get(0).pause(); });
 						m2mVideo.play();
+						m2mVideo.webkitEnterFullscreen();						
 					}					
                 }
 

@@ -1,0 +1,357 @@
+@import url("base/defaults.css");
+
+/* Fonte embedada */
+@font-face {
+    font-family:'offs_b-webfont';
+    src:	url('../fonts/offs_b-webfont.eot');
+    src:    url('../fonts/offs_b-webfont.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/offs_b-webfont.woff') format('woff'),
+			url('../fonts/offs_b-webfont.ttf') format('truetype'),
+			url('../fonts/offs_b-webfont.svg') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:'offs_-webfont';
+    src:	url('../fonts/offs_-webfont.eot');
+    src:    url('../fonts/offs_-webfont.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/offs_-webfont.woff') format('woff'),
+			url('../fonts/offs_-webfont.ttf') format('truetype'),
+			url('../fonts/offs_-webfont.svg') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:'vivo-bold-webfont';
+    src:	url('../fonts/vivo-bold-webfont.eot');
+    src: 	url('../fonts/vivo-bold-webfont.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/vivo-bold-webfont.woff') format('woff'),
+			url('../fonts/vivo-bold-webfont.ttf') format('truetype'),
+			url('../fonts/vivo-bold-webfont.svg') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+
+/* Native elements style */
+body
+{
+	background-color:#ccc;
+	background-position:0px -14px;
+	font-family:offs_-webfont;
+	text-indent:0px;
+	color:#666666;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+body, html
+{
+	height:100%;
+	overflow:hidden;
+}
+
+img { float:left; }
+
+h1, h2, h3, h4 { font-family:offs_b-webfont; }
+
+h1
+{ 
+	color:#00aaff;
+	font-size:34px;
+	letter-spacing:-2px;
+	line-height:35px;
+}
+
+h2
+{
+	font-size:28px;
+	color:#fff;
+}
+
+h4
+{
+	font-size:14px;
+	color:#00aaff;
+}
+
+h6 { font-size:12px; }
+
+span
+{
+	font-size:18px;
+	color:#fff;
+}
+
+span.mini{ font-size:14px; }
+
+span.mini2{ padding:15px 20px 20px 10px; }
+
+ul, ol
+{
+	font-size:14px;
+	color:#fff;
+	padding-left:15px;
+}
+
+li { margin-bottom:10px; }
+
+p
+{
+	font-size:16px;
+	margin-top:10px;
+	margin-bottom:200px;
+}
+
+
+/* Main styles */
+#preloader
+{
+	background-image:url(../img/main/preloader.png);
+	position:absolute;
+	top:320px;
+	left:50%;
+	margin-left:-64px;
+	width:128px;
+	height:128px;
+}
+
+#menu
+{
+	background-repeat:no-repeat;
+	position:absolute;
+	top:0px;
+	left:0;
+	width:1024px;
+	height:87px;
+	z-index:200;
+}
+
+#submenu
+{
+	background-repeat:no-repeat;
+	position:absolute;
+	top:0px;
+	left:0;
+	width:1024px;
+	height:75px;
+	z-index:100;
+}
+
+#submenu_content
+{
+	position:absolute;
+	top:20px;
+	left:50%;
+}
+
+#content
+{
+	position:absolute;
+	top:82px;
+	left:0;
+	width:1024px;
+	height:655px;
+	overflow:hidden;
+	-webkit-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0);
+}
+
+#video_content
+{
+	position:absolute;
+	top:0px;
+	left:0;
+	width:1024px;
+	height:715px;
+	overflow:hidden;
+	display:none;
+	-webkit-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0);
+}
+
+#home_content
+{
+	background-image:url("../img/content/bg_home.jpg");
+	width:1024px;
+	height:655px;
+}
+
+#footer
+{
+	position:absolute;
+	top:715px;
+	left:0;
+	width:1024px;
+	height:30px;
+}
+
+.content_internals
+{
+	width:495px;
+	height:655px;
+	padding-left:529px;
+}
+
+.content_internals2 { padding-left:470px; }
+
+.content_internals3 { padding-top:73px; }
+
+.content_capa
+{
+	background-image:url(../img/content/bg_tx_capas.png);
+	background-repeat:no-repeat;
+	padding:20px 50px 20px 50px;
+}
+
+
+/* Button styles */
+#bt_0 { width:174px; }
+
+.menu_button
+{
+	float:left;
+	width:170px;
+	height:87px;
+	background-repeat:no-repeat;
+}
+
+.submenu_button
+{
+	float:left;
+	max-width:90px;
+	height:36px;
+	margin-left:10px;
+	padding-left:40px;
+	-webkit-user-select:none;
+	background-repeat:no-repeat;
+}
+
+.submenu_button p
+{
+	margin:0px;
+	color:#005580;
+	font-size:11px;
+	font-family:offs_b-webfont;
+}
+
+.home_button
+{
+	background-repeat:no-repeat;
+	position:absolute;
+	width:175px;
+	height:50px;
+}
+
+.capa_button, .capa_main_button
+{
+	background-image:url(../img/btns/content/bt_capa.png);
+	background-repeat:no-repeat;
+	width:349px;
+	height:54px;
+	padding-left:55px;
+	font-family:offs_b-webfont;
+	font-size:18px;
+	color:#fff;
+	vertical-align:middle;
+	display:table-cell;
+	-webkit-user-select:none;
+}
+
+.capa_button2
+{
+	background-image:url(../img/btns/content/bt_capa_2.png);
+	width:384px;
+}
+
+
+/* Video styles */
+.video_style
+{
+	position:absolute;
+	top:0px;
+	left:0;
+	width:1024px;
+	height:730px;
+	overflow:hidden;
+}
+
+.video_fade { background-color:#ccc; }
+
+.video_m2m
+{
+	position:absolute;
+	top:0px;
+	left:0;
+	width:872px;
+	height:550px;
+	padding-top:90px;
+	padding-left:150px;
+	background-color:rgba(0, 0, 0, 0.6);
+	display:none;
+}
+
+.m2m_content
+{
+	width:720px;
+	min-height:100px;
+}
+
+.m2m_title
+{
+	width:700px;
+	background-color:#00a2ff;
+	background-image:url(../img/btns/video/bt_close.png);
+	background-position:690px;
+	background-repeat:no-repeat;
+	padding:15px 0 15px 15px;
+	color:#fff;
+}
+
+/* Text styles */
+.title
+{
+	padding:15px 0 15px 50px;
+	background-color:#27414f;
+}
+
+.tx
+{
+	padding:25px 100px 15px 50px;
+	background-color:#5d727d;
+	height:460px;
+	overflow:scroll;
+	-webkit-overflow-scrolling:touch;
+}
+
+.tx2 { padding-right:0px; }
+
+.tx3
+{
+	font-size:16px;
+	color:#fff;
+	padding-right:40px;
+}
+
+
+/* Accordion styles */
+.item_accordion > span
+{
+	display:none;
+	width:382px;
+}
+
+.bt_accordion
+{
+	background-image:url(../img/btns/content/bg_accordion.png);
+	width:430px;
+	height:44px;
+	padding-left:46px;
+	font-family:offs_b-webfont;
+	font-size:20px;
+	-webkit-user-select:none;
+	vertical-align:middle;
+	display:table-cell;
+	color:#00aaff;
+}
